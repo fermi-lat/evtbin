@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri May  7 11:15:58 PDT 2004
+users/peachey/evtbin/src/evtbin
+
+Modified Files:
+	evtbin.cxx 
+Log Message:
+Begin adding support for PHA2. For now it really just creates a PHA1
+from the first spectrum.
+    *
+------------------------------------------------------------
 User: peachey  Fri May  7 11:14:25 PDT 2004
 users/peachey/evtbin/src
 
