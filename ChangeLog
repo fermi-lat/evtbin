@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Mon Aug 16 10:18:53 PDT 2004
+evtbin/src
+
+Modified Files:
+	Gti.cxx 
+Log Message:
+Use evtbin namespace, not rspgen. Add default constructor. Add operator & and operator !=
+for performing Gti math. Add non-const iterator, begin(), end(). Add insertInterval,
+getNumIntervals/setNumIntervals, and computeOntime().
+
+    *
+------------------------------------------------------------
+User: peachey  Mon Aug 16 10:18:53 PDT 2004
 evtbin/evtbin
 
 Modified Files:
