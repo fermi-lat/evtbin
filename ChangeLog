@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Sun Mar  6 11:43:27 PST 2005
+evtbin/src
+
+Added Files:
+	GlastGbmBinConfig.cxx GlastGbmBinConfig.h 
+	GlastLatBinConfig.cxx GlastLatBinConfig.h 
+Log Message:
+Add mission/instrument-dependent configuration classes for LAT and GBM.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  4 14:37:04 PST 2005
 evtbin/src/gtbin
 
