@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Jun  2 09:25:37 PDT 2004
+users/peachey/evtbin/data
+
+Added Files:
+	ChanEnergyBin.fits 
+Log Message:
+Test file for case of user-supplied energy bin definition file.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun  2 09:19:35 PDT 2004
 users/peachey/evtbin/pfiles
 
