@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed May 12 06:32:01 PDT 2004
+users/peachey/evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Add tests for basic lightcurve and spectrum creation.
+    *
+------------------------------------------------------------
 User: peachey  Wed May 12 06:31:13 PDT 2004
 users/peachey/evtbin/src
 
