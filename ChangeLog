@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Oct  6 12:45:25 PDT 2004
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Use newer, more up-to-date and smaller test files.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Oct  6 12:44:41 PDT 2004
 evtbin/src
 
