@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Mon Mar 14 06:51:48 PST 2005
+evtbin/src/gtbin
+
+Modified Files:
+	gtbin.cxx 
+Log Message:
+Change parameters controlling count map so that user is prompted for a
+choice between celestial and galactic coordinates, and the center reference parameters
+use more coordinate-system-neutral terminology.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon Mar 14 06:51:48 PST 2005
 evtbin/src
 
 Modified Files:
