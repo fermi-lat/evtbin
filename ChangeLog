@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb  4 06:06:05 PST 2005
+evtbin/evtbin
+
+Modified Files:
+	BinConfig.h 
+Log Message:
+Add optional parameters to configure a constant signal-noise binner.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb  4 06:05:17 PST 2005
 evtbin/src
 
