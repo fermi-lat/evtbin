@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Thu Jul  1 19:29:12 PDT 2004
+users/peachey/evtbin/src
+
+Modified Files:
+	CountMap.cxx 
+Log Message:
+it, write CRPIX1/2, CRVAL1/2 keywords, etc.
+
+    *
+------------------------------------------------------------
+User: peachey  Thu Jul  1 19:29:12 PDT 2004
 users/peachey/evtbin/evtbin
 
 Modified Files:
