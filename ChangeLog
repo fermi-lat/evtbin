@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  4 06:59:47 PST 2005
+evtbin/src
+
+Modified Files:
+	Hist1D.cxx Hist2D.cxx 
+Log Message:
+Resize data arrays as needed when filling bins, in order to accomodate
+dynamic sized binners, such as the const signal-noise ratio binner.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Mar  1 12:21:02 PST 2005
 evtbin/pfiles
 
