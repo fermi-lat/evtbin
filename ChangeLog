@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed May 12 06:31:13 PDT 2004
+users/peachey/evtbin/evtbin
+
+Added Files:
+	RecordBinFiller.h 
+Log Message:
+Helper functor to aid in binning tip table records into histograms.
+    *
+------------------------------------------------------------
 User: peachey  Wed May 12 05:54:55 PDT 2004
 users/peachey/evtbin/evtbin
 
