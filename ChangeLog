@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Mon Jan 24 13:13:42 PST 2005
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Use evtable parameter for name of event table, and pass it to constructors of
+DataProduct subclasses. Use evfile instead of eventfile parameter.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Jan 24 13:12:16 PST 2005
 evtbin/src
 
