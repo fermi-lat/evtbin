@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Jun 30 08:35:34 PDT 2004
+users/peachey/evtbin/src
+
+Modified Files:
+	DataProduct.cxx 
+Log Message:
+Copy more keywords from the input file.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun 30 08:34:34 PDT 2004
 users/peachey/evtbin/data
 
