@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Mon Jan 24 12:03:28 PST 2005
+evtbin/src/gtbin
+
+Added Files:
+	gtbin.cxx 
+Log Message:
+Renaming evtbin application to gtbin.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon Jan 24 12:03:28 PST 2005
 evtbin/pfiles
 
 Added Files:
