@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Tue May 11 07:09:01 PDT 2004
+users/peachey/evtbin/src
+
+Modified Files:
+	LinearBinner.cxx LogBinner.cxx 
+Log Message:
+Add optional field containing the name of the quantity binned by
+the binner.
+    *
+------------------------------------------------------------
+User: peachey  Tue May 11 07:09:01 PDT 2004
 users/peachey/evtbin/evtbin
 
 Modified Files:
