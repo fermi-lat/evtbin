@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Wed May 12 07:53:13 PDT 2004
+users/peachey/evtbin/src
+
+Modified Files:
+	LinearBinner.cxx LogBinner.cxx 
+Log Message:
+Give binners the ability to clone themselves.
+    *
+------------------------------------------------------------
+User: peachey  Wed May 12 07:53:13 PDT 2004
 users/peachey/evtbin/evtbin
 
 Modified Files:
