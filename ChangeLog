@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu May 13 09:53:40 PDT 2004
+users/peachey/evtbin/evtbin
+
+Removed Files:
+	TipBinner.h TipEqualLinearBinner.h TipBinner2D.h 
+	TipEqualLogBinner.h 
+Log Message:
+Removing classes which were refactored.
+    *
+------------------------------------------------------------
 User: peachey  Thu May 13 09:52:36 PDT 2004
 users/peachey/evtbin/src/evtbin
 
