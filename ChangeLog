@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Wed May 12 07:55:56 PDT 2004
+users/peachey/evtbin/src
+
+Modified Files:
+	Hist1D.cxx Hist2D.cxx 
+Added Files:
+	Hist.cxx 
+Log Message:
+Hist now makes copies of binners rather than adopting the actual
+binners supplied as arguments.
+    *
+------------------------------------------------------------
+User: peachey  Wed May 12 07:55:56 PDT 2004
 users/peachey/evtbin/evtbin
 
 Modified Files:
