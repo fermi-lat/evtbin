@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon May 10 12:29:20 PDT 2004
+users/peachey/evtbin/src
+
+Added Files:
+	LinearBinner.cxx LogBinner.cxx 
+Log Message:
+New abstraction of a generic binner, and implementations for
+uniform linear and logarithmic binners.
+    *
+------------------------------------------------------------
 User: peachey  Mon May 10 12:29:19 PDT 2004
 users/peachey/evtbin/evtbin
 
