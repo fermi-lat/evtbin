@@ -8,8 +8,9 @@ TELESCOP =                GLAST / Name of telescope generating data
 INSTRUME =                  LAT / Name of instrument generating data
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
+OBSERVER = 'Michelson'          / PI name
 CREATOR  =                      / Software and version creating file
-HISTORY                     $Id$
+HISTORY                     $Id: LatEnergyBinDef.tpl,v 1.1 2004/10/06 02:27:55 peachey Exp $
 END
 
 
@@ -35,7 +36,7 @@ HDUVERS  =                1.2.0 / Version number of the format
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id$
+HISTORY                   $Id: LatEnergyBinDef.tpl,v 1.1 2004/10/06 02:27:55 peachey Exp $
 
 
 TTYPE#  CHANNEL        / Raw channel number
