@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: peachey  Thu May 20 07:13:04 PDT 2004
+users/peachey/evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Add SingleSpec and MultiSpec classes deriving from DataProduct, which
+handle PHA 1 & 2 files in a way similar to how LightCurve handles
+FITS LC files. Replace test of single spectrum with a SingleSpec
+object test and add test for MultiSpec.
+
+    *
+------------------------------------------------------------
+User: peachey  Thu May 20 07:13:04 PDT 2004
 users/peachey/evtbin/src
 
 Added Files:
