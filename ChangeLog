@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Mon Jan 24 13:12:16 PST 2005
+evtbin/src
+
+Modified Files:
+	LightCurve.cxx MultiSpec.cxx SingleSpec.cxx CountMap.cxx 
+	DataProduct.cxx 
+Log Message:
+Add constructor parameter which has the name of the events table.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon Jan 24 13:12:16 PST 2005
 evtbin/evtbin
 
 Modified Files:
