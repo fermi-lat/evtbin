@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed May 12 05:54:55 PDT 2004
+users/peachey/evtbin/evtbin
+
+Modified Files:
+	Hist1D.h 
+Log Message:
+Add random access.
+    *
+------------------------------------------------------------
 User: peachey  Wed May 12 05:53:49 PDT 2004
 users/peachey/evtbin/src
 
