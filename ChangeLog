@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: peachey  Mon May 17 09:07:21 PDT 2004
+users/peachey/evtbin/src
+
+Modified Files:
+	LightCurve.cxx 
+Added Files:
+	DataProduct.cxx 
+Log Message:
+Put light curve features which will be useful for spectra and other data
+products into base class DataProduct.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon May 17 09:07:21 PDT 2004
 users/peachey/evtbin/evtbin
 
 Modified Files:
