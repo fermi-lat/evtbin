@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb  4 06:08:43 PST 2005
+evtbin/evtbin
+
+Modified Files:
+	OrderedBinner.h 
+Log Message:
+Make interval set mutable so that fancier binners like
+constant signal-noise binner can alter intervals as they go.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb  4 06:06:56 PST 2005
 evtbin/src/test
 
