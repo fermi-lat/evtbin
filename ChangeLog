@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu May 20 12:16:23 PDT 2004
+users/peachey/evtbin/src/evtbin
+
+Modified Files:
+	evtbin.cxx 
+Log Message:
+Refactor to remove redundancy and take advantage of DataProduct
+class family.
+    *
+------------------------------------------------------------
 User: peachey  Thu May 20 07:13:04 PDT 2004
 users/peachey/evtbin/src/test
 
