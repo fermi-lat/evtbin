@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Jun  3 07:33:19 PDT 2004
+users/peachey/evtbin/pfiles
+
+Modified Files:
+	evtbin.par test_evtbin.par 
+Log Message:
+Add spatial binning parameters.
+    *
+------------------------------------------------------------
 User: peachey  Thu Jun  3 07:32:30 PDT 2004
 users/peachey/evtbin/src
 
