@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  4 14:35:19 PST 2005
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Add GBM test case, and update to work with other recent changes.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  4 14:33:14 PST 2005
 evtbin/src
 
