@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Sun Sep 26 11:51:29 PDT 2004
+evtbin/evtbin
+
+Modified Files:
+	CountMap.h DataProduct.h 
+Log Message:
+Use new overload of binInput to bin all events in the file.
+    *
+------------------------------------------------------------
 User: peachey  Wed Aug 18 18:20:51 PDT 2004
 evtbin/doc
 
