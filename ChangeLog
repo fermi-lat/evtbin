@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Oct 13 09:23:49 PDT 2004
+evtbin/data
+
+Modified Files:
+	LatBinnedTemplate LatSingleBinnedTemplate 
+Log Message:
+Use floating point numbers where appropriate to comply with Xspec 12.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Oct 13 06:07:06 PDT 2004
 evtbin/doc
 
