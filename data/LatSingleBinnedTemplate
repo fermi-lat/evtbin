@@ -9,7 +9,7 @@ INSTRUME =                  LAT / Name of instrument generating data
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatSingleBinnedTemplate,v 1.3 2004/09/29 14:03:46 peachey Exp $ 
+HISTORY                   $Id: LatSingleBinnedTemplate,v 1.4 2004/10/13 16:23:49 peachey Exp $ 
 END
 
 ##################################################################################
@@ -48,13 +48,13 @@ BACKSCAL =                   1. / Scaling factor to be applied to Bkgdfile
 CHANTYPE =                   PI / Whether channels used in the file have been corrected in any way
 FILTER   =                      / Instrument filter in use (if any)
 OBJECT   =                      / Observed object
-EQUINOX  =                 2000 / Equinox of RA & DEC specifications
+EQUINOX  =                2000. / Equinox of RA & DEC specifications
 RADECSYS =                      / Coordinate frame used for EQUINOX
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 NDSKEYS =                     0 / Number of data subspace keywords in header
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatSingleBinnedTemplate,v 1.3 2004/09/29 14:03:46 peachey Exp $ 
+HISTORY                   $Id: LatSingleBinnedTemplate,v 1.4 2004/10/13 16:23:49 peachey Exp $ 
 
 # Column description
 
@@ -103,7 +103,7 @@ HDUVERS  =                1.2.0 / Version number of the format
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatSingleBinnedTemplate,v 1.3 2004/09/29 14:03:46 peachey Exp $ 
+HISTORY                   $Id: LatSingleBinnedTemplate,v 1.4 2004/10/13 16:23:49 peachey Exp $ 
 
 TTYPE#  CHANNEL                 / Raw channel number
 TFORM#  I                       / Data format of this field
@@ -145,7 +145,7 @@ TIMEUNIT =                    s / All times are in seconds unless specified othe
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatSingleBinnedTemplate,v 1.3 2004/09/29 14:03:46 peachey Exp $ 
+HISTORY                   $Id: LatSingleBinnedTemplate,v 1.4 2004/10/13 16:23:49 peachey Exp $ 
 
 
 TTYPE#  START                   / Start time of an interval
