@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Thu May 27 08:51:25 PDT 2004
+users/peachey/evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Add and test OrderedBinner class to handle client-defined bins.
+    *
+------------------------------------------------------------
+User: peachey  Thu May 27 08:51:25 PDT 2004
 users/peachey/evtbin/src
 
 Added Files:
