@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Fri Mar  4 08:09:11 PST 2005
+evtbin/src
+
+Modified Files:
+	MultiSpec.cxx SingleSpec.cxx 
+Log Message:
+Accept Gti object in constructor, and pass it to base class
+DataProduct constructor. Also take Ebounds binner instead of directly
+creating it.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Mar  4 08:09:11 PST 2005
 evtbin/evtbin
 
 Modified Files:
