@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Oct  6 12:44:41 PDT 2004
+evtbin/src
+
+Modified Files:
+	MultiSpec.cxx 
+Log Message:
+Write TSTART and TELAPSE columns.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Oct  6 12:44:21 PDT 2004
 evtbin/src
 
