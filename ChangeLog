@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Jun  3 07:34:08 PDT 2004
+users/peachey/evtbin/evtbin
+
+Modified Files:
+	CountMap.h 
+Log Message:
+Rename arguments to constructor, and add strings specifying the names
+of the RA and DEC columns.
+    *
+------------------------------------------------------------
 User: peachey  Thu Jun  3 07:33:19 PDT 2004
 users/peachey/evtbin/pfiles
 
