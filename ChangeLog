@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Oct  5 19:16:14 PDT 2004
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Use st_facilities::Env to find data files. Centralize numbers used for bin defs.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Sep 29 07:11:51 PDT 2004
 evtbin/doc
 
