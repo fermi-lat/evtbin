@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Aug 16 10:10:40 PDT 2004
+evtbin/evtbin
+
+Modified Files:
+	CountMap.h LightCurve.h MultiSpec.h 
+Log Message:
+Constructor constructs directly from event file name.
+    *
+------------------------------------------------------------
 User: peachey  Mon Aug 16 10:09:29 PDT 2004
 evtbin/data
 
