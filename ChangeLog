@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Aug  5 22:11:52 PDT 2004
+evtbin/evtbin
+
+Modified Files:
+	Binner.h 
+Log Message:
+Add default constructor to Interval class.
+    *
+------------------------------------------------------------
 User: peachey  Thu Aug  5 15:05:51 PDT 2004
 evtbin/src
 
