@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr  5 14:00:12 PDT 2005
+evtbin/evtbin
+
+Modified Files:
+	DataProduct.h 
+Log Message:
+Add default blank table name, to allow conveniently harvesting keywords
+from a primary extension.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr  5 08:24:03 PDT 2005
 evtbin/src/gtbin
 
