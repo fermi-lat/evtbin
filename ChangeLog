@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Feb  4 06:06:56 PST 2005
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Add test code for constant signal-noise binner.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Feb  4 06:06:05 PST 2005
 evtbin/src
 
