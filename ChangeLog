@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Jan 24 14:02:38 PST 2005
+evtbin/pfiles
+
+Modified Files:
+	gtbindef.par gtbin.par test_evtbin.par 
+Log Message:
+Rationalize parameter names to conform to SAE standards.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Jan 24 13:57:25 PST 2005
 evtbin/src/gtbin
 
