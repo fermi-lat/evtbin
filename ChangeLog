@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: peachey  Mon Aug 16 10:16:32 PDT 2004
+evtbin/evtbin
+
+Modified Files:
+	DataProduct.h 
+Log Message:
+Change constructor to construct directly from an event file. Add new methods:
+readGti, writeGti, getGti, adjustGti ("ands" GTI with bin definitions,)
+writeEbounds (moved here from SingleSpec), harvestKeywords(file, extension),
+adjustTimeKeywords, computeExposure.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Aug 16 10:11:36 PDT 2004
 evtbin/pfiles
 
