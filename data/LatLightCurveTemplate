@@ -9,7 +9,7 @@ INSTRUME =                  LAT / Name of instrument generating data
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatLightCurveTemplate,v 1.1.1.1 2003/12/10 15:51:22 peachey Exp $ 
+HISTORY                   $Id: LatLightCurveTemplate,v 1.2 2004/06/30 15:34:03 peachey Exp $ 
 END
 
 ##################################################################################
@@ -29,6 +29,7 @@ HDUCLAS1 =           LIGHTCURVE / PHA dataset (OGIP memo OGIP-92-007)
 HDUCLAS2 =                TOTAL / Type of data stored
 HDUCLAS3 =                COUNT / Further details of type of data stored
 HDUVERS  =                1.2.0 / Version number of the format (this document describes version 1.2.0)
+EXPOSURE =                      / Total livetime in seconds
 FILTER   =                      / Instrument filter in use (if any)
 OBJECT   =                      / Observed object
 EQUINOX  =                 2000 / Equinox of RA & DEC specifications
@@ -42,7 +43,7 @@ TIMESYS  =                  MJD / Time system used to define time
 TIMEUNIT =                    s / Unit for TSTART, TSTOP and TIMEZERO
 NDSKEYS  =                    0 / Number of data subspace keywords in header
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatLightCurveTemplate,v 1.1.1.1 2003/12/10 15:51:22 peachey Exp $ 
+HISTORY                   $Id: LatLightCurveTemplate,v 1.2 2004/06/30 15:34:03 peachey Exp $ 
 
 # Column description
 
@@ -77,13 +78,14 @@ TSTOP    =                      / Upper bound of last GTI
 TIMEZERO =                    0 / Clock correction (if not zero)
 TIMESYS  =                  MJD / Time system used to define time
 TIMEUNIT =                    s / All times are in seconds unless specified otherwise
+EXPOSURE =                      / Total livetime in seconds
 HDUCLASS =                 OGIP / File format is OGIP standard
 HDUCLAS1 =                  GTI / Contains Good Time Intervals
 HDUVERS  =                1.2.0 / Version of file format
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatLightCurveTemplate,v 1.1.1.1 2003/12/10 15:51:22 peachey Exp $ 
+HISTORY                   $Id: LatLightCurveTemplate,v 1.2 2004/06/30 15:34:03 peachey Exp $ 
 
 
 # Column description
