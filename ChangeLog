@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Oct  6 12:55:44 PDT 2004
+evtbin/data
+
+Removed Files:
+	energybins.fits 
+Log Message:
+Moved reference energy bins file to outref.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Oct  6 12:52:54 PDT 2004
 evtbin/cmt
 
