@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Aug 16 10:11:21 PDT 2004
+evtbin/evtbin
+
+Modified Files:
+	SingleSpec.h 
+Log Message:
+Constructor constructs directly from event file name. Method
+writeEbounds moved into the base class.
+    *
+------------------------------------------------------------
 User: peachey  Mon Aug 16 10:10:40 PDT 2004
 evtbin/evtbin
 
