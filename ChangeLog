@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu May  6 08:13:39 PDT 2004
+users/peachey/evtbin/evtbin
+
+Added Files:
+	TipEqualLogBinner.h 
+Log Message:
+Add new equal logarithmic binner.
+    *
+------------------------------------------------------------
 User: peachey  Thu May  6 08:12:09 PDT 2004
 users/peachey/evtbin/evtbin
 
