@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Wed May 26 09:11:32 PDT 2004
+users/peachey/evtbin/data
+
+Added Files:
+	LatCountMapTemplate 
+Log Message:
+Begin to add count map generation. Something is not quite right still.
+    *
+------------------------------------------------------------
+User: peachey  Wed May 26 09:11:32 PDT 2004
 users/peachey/evtbin/cmt
 
 Modified Files:
