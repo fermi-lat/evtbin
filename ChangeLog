@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Oct  6 12:57:45 PDT 2004
+evtbin/data
+
+Removed Files:
+	ChanEnergyBin.fits D1.fits D2.fits 
+Log Message:
+Removed outdated test data.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Oct  6 12:55:44 PDT 2004
 evtbin/data
 
