@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Fri May  7 11:13:58 PDT 2004
+users/peachey/evtbin/evtbin
+
+Modified Files:
+	TipBinner.h TipEqualLinearBinner.h TipEqualLogBinner.h 
+Log Message:
+Add accesors to allow higher-dimensional binners to be composed from 1D binners.
+    *
+------------------------------------------------------------
 User: peachey  Thu May  6 08:16:57 PDT 2004
 users/peachey/evtbin/data
 
