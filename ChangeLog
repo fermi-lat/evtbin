@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Mon Aug 16 10:25:03 PDT 2004
+evtbin/src
+
+Modified Files:
+	SingleSpec.cxx 
+Log Message:
+Change constructor to construct directly from event file, and 
+to call harvestKeywords, adjustTimeKeywords, adjustGti and writeEbounds as appropriate. Moved
+writeEbounds to base class.
+    *
+------------------------------------------------------------
 User: peachey  Mon Aug 16 10:24:27 PDT 2004
 evtbin/src
 
