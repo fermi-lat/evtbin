@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Jun 30 08:33:38 PDT 2004
+users/peachey/evtbin/data
+
+Modified Files:
+	LatBinnedTemplate 
+Log Message:
+Remove unneccessary columns.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun 30 08:32:24 PDT 2004
 users/peachey/evtbin/src
 
