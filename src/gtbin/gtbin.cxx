@@ -50,7 +50,7 @@
 #include "tip/Table.h"
 
 // Identify cvs version tag.
-const std::string s_cvs_id("$Name: v0r8p1 $");
+const std::string s_cvs_id("$Name:  $");
 
 /** \class EvtBinAppBase
     \brief Base class for specific binning applications. This has a generic run() method which is valid for
@@ -116,9 +116,11 @@ class EvtBinAppBase : public st_app::StApp {
   protected:
     std::string getScFileName(const std::string & sc_file) const {
       std::string real_sc_file = sc_file;
-      // Convert whole string to lowercase.
+      // Convert whole string to lowercase for purposes of comparison to special string "none"..
       for (std::string::iterator itor = real_sc_file.begin(); itor != real_sc_file.end(); ++itor) *itor = tolower(*itor);
+      // Replace "none" with blank, and otherwise use original file name.
       if (real_sc_file == "none") real_sc_file = "";
+      else real_sc_file = sc_file;
 
       return real_sc_file;
     }
