@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr  5 14:02:01 PDT 2005
+evtbin/src
+
+Modified Files:
+	DataProduct.cxx 
+Log Message:
+Change harvestKeywords to work on any extension, not just a table.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr  5 14:00:12 PDT 2005
 evtbin/evtbin
 
