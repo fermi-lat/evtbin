@@ -9,7 +9,7 @@ INSTRUME =                  LAT / Name of instrument generating data
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                     $Id: LatBinnedTemplate,v 1.1 2004/05/20 19:16:58 peachey Exp $
+HISTORY                     $Id: LatBinnedTemplate,v 1.2 2004/06/30 15:33:38 peachey Exp $
 END
 
 ##################################################################################
@@ -33,7 +33,11 @@ HDUVERS  =                1.2.0 / Version number of the format
 DETCHANS =                    0 / Total number of detector channels available
 POISSERR =                    T / Whether Poissonian errors are appropriate to the data
 EXPOSURE =                      / Total livetime in seconds
+BACKFILE =                 NONE / Name of background file (if any)
+CORRFILE =                 NONE / Name of correction file (if any)
 CORRSCAL =                    1 / Correction scaling factor.
+RESPFILE =                 NONE / Name of redistribution matrix file (if any)
+ANCRFILE =                 NONE / Name of ancillary response file (if any)
 SYS_ERR  =                    0 / Fractional systematic error
 QUALITY  =                    0 / Data quality flag
 GROUPING =                    0 / Data grouping flag
@@ -48,7 +52,7 @@ DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 NDSKEYS =                     0 / Number of data subspace keywords in header
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatBinnedTemplate,v 1.1 2004/05/20 19:16:58 peachey Exp $ 
+HISTORY                   $Id: LatBinnedTemplate,v 1.2 2004/06/30 15:33:38 peachey Exp $ 
 
 
 
@@ -128,7 +132,7 @@ HDUVERS  =                1.2.0 / Version number of the format
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatBinnedTemplate,v 1.1 2004/05/20 19:16:58 peachey Exp $ 
+HISTORY                   $Id: LatBinnedTemplate,v 1.2 2004/06/30 15:33:38 peachey Exp $ 
 
 
 TTYPE#  CHANNEL        / Raw channel number
@@ -168,7 +172,7 @@ TIMEUNIT =                    s / All times are in seconds unless specified othe
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatBinnedTemplate,v 1.1 2004/05/20 19:16:58 peachey Exp $ 
+HISTORY                   $Id: LatBinnedTemplate,v 1.2 2004/06/30 15:33:38 peachey Exp $ 
 
 
 
