@@ -9,7 +9,7 @@ INSTRUME =                  LAT / Name of instrument generating data
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatSingleBinnedTemplate,v 1.1 2004/05/06 15:16:57 peachey Exp $ 
+HISTORY                   $Id: LatSingleBinnedTemplate,v 1.2 2004/06/30 15:34:34 peachey Exp $ 
 END
 
 ##################################################################################
@@ -35,7 +35,11 @@ POISSERR =                    T / Whether Poissonian errors are appropriate to t
 TSTART   =                      / Start Time
 TSTOP    =                      / Stop Time
 EXPOSURE =                      / Integration time (in seconds) for the PHA data (assumed to be corrected for deadtime, data drop-outs etc. )
+BACKFILE =                 NONE / Name of background file (if any)
+CORRFILE =                 NONE / Name of correction file (if any)
 CORRSCAL =                    1 / Correction scaling factor.
+RESPFILE =                 NONE / Name of redistribution matrix file (if any)
+ANCRFILE =                 NONE / Name of ancillary response file (if any)
 SYS_ERR  =                    0 / Fractional systematic error
 QUALITY  =                    0 / Data quality flag
 GROUPING =                    0 / Data grouping flag
@@ -50,7 +54,7 @@ DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 NDSKEYS =                     0 / Number of data subspace keywords in header
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatSingleBinnedTemplate,v 1.1 2004/05/06 15:16:57 peachey Exp $ 
+HISTORY                   $Id: LatSingleBinnedTemplate,v 1.2 2004/06/30 15:34:34 peachey Exp $ 
 
 # Column description
 
@@ -99,7 +103,7 @@ HDUVERS  =                1.2.0 / Version number of the format
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatSingleBinnedTemplate,v 1.1 2004/05/06 15:16:57 peachey Exp $ 
+HISTORY                   $Id: LatSingleBinnedTemplate,v 1.2 2004/06/30 15:34:34 peachey Exp $ 
 
 TTYPE#  CHANNEL                 / Raw channel number
 TFORM#  I                       / Data format of this field
@@ -141,7 +145,7 @@ TIMEUNIT =                    s / All times are in seconds unless specified othe
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatSingleBinnedTemplate,v 1.1 2004/05/06 15:16:57 peachey Exp $ 
+HISTORY                   $Id: LatSingleBinnedTemplate,v 1.2 2004/06/30 15:34:34 peachey Exp $ 
 
 
 TTYPE#  START                   / Start time of an interval
