@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Jun 30 08:34:03 PDT 2004
+users/peachey/evtbin/data
+
+Modified Files:
+	LatLightCurveTemplate 
+Log Message:
+Remove TIMEZERO keyword, which is not necessary.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun 30 08:33:38 PDT 2004
 users/peachey/evtbin/data
 
