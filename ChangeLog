@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  4 07:19:37 PST 2005
+evtbin/evtbin
+
+Modified Files:
+	BinConfig.h 
+Log Message:
+Change BinConfig to an ABC, with a prototype pattern for creating
+specific configurations for different missions and instruments,
+e.g. for GBM/LAT. Also add methods createEbounds and createGti,
+which allow clients to get Ebounds and Gti data for different
+missions and instruments. Add parameters needed to configure const S/N
+binners in time space.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  4 06:59:47 PST 2005
 evtbin/src
 
