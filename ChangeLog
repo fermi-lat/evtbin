@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Mon Aug 16 10:11:36 PDT 2004
+evtbin/pfiles
+
+Modified Files:
+	evtbin.par 
+Log Message:
+Add scfile parameter.
+    *
+------------------------------------------------------------
 User: peachey  Mon Aug 16 10:11:21 PDT 2004
 evtbin/evtbin
 
