@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu May 13 09:52:36 PDT 2004
+users/peachey/evtbin/src/evtbin
+
+Modified Files:
+	evtbin.cxx 
+Log Message:
+Convert to use Binner and Hist subclasses in lieu of TipBinner
+hierarchy.
+    *
+------------------------------------------------------------
 User: peachey  Thu May 13 09:51:40 PDT 2004
 users/peachey/evtbin/evtbin
 
