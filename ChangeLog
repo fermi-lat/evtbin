@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue May 11 07:09:01 PDT 2004
+users/peachey/evtbin/evtbin
+
+Modified Files:
+	Binner.h LinearBinner.h LogBinner.h 
+Log Message:
+Add optional field containing the name of the quantity binned by
+the binner.
+    *
+------------------------------------------------------------
 User: peachey  Mon May 10 12:31:21 PDT 2004
 users/peachey/evtbin/src/test
 
