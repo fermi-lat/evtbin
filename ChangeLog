@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu May  6 08:12:09 PDT 2004
+users/peachey/evtbin/evtbin
+
+Modified Files:
+	TipEqualLinearBinner.h TipBinner.h 
+Log Message:
+Add standard #ifndef guard to protect against multiple inclusion.
+    *
+------------------------------------------------------------
 User: peachey  Thu May  6 08:11:07 PDT 2004
 users/peachey/evtbin/cmt
 
