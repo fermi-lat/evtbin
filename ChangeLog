@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed May 12 07:55:56 PDT 2004
+users/peachey/evtbin/evtbin
+
+Modified Files:
+	Hist1D.h Hist2D.h Hist.h 
+Log Message:
+Hist now makes copies of binners rather than adopting the actual
+binners supplied as arguments.
+    *
+------------------------------------------------------------
 User: peachey  Wed May 12 07:53:13 PDT 2004
 users/peachey/evtbin/src
 
