@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: peachey  Tue May 11 07:12:47 PDT 2004
+users/peachey/evtbin/evtbin
+
+Modified Files:
+	Hist1D.h Hist2D.h 
+Added Files:
+	Hist.h 
+Log Message:
+Add base class Hist for Hist1D and Hist2D. The base class contains
+the binners, as well as a virtual fillBin method which allows a vector
+to be passed generically to a histogram with any number of dimensions.
+    *
+------------------------------------------------------------
 User: peachey  Tue May 11 07:09:01 PDT 2004
 users/peachey/evtbin/src
 
