@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed May 12 07:53:13 PDT 2004
+users/peachey/evtbin/evtbin
+
+Modified Files:
+	Binner.h LinearBinner.h LogBinner.h 
+Log Message:
+Give binners the ability to clone themselves.
+    *
+------------------------------------------------------------
 User: peachey  Wed May 12 06:32:01 PDT 2004
 users/peachey/evtbin/src/test
 
