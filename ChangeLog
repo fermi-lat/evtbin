@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Sat May 15 07:29:46 PDT 2004
+users/peachey/evtbin/src
+
+Added Files:
+	LightCurve.cxx 
+Log Message:
+Add LightCurve abstraction, and use it in the test code.
+    *
+------------------------------------------------------------
+User: peachey  Sat May 15 07:29:46 PDT 2004
 users/peachey/evtbin/evtbin
 
 Added Files:
