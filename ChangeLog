@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Mar 15 10:13:48 PST 2005
+evtbin/pfiles
+
+Modified Files:
+	gtbin.par test_evtbin.par 
+Log Message:
+Use enumerated ranges for parameters when appropriate.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r8p0, operation: add
 Package: evtbin
