@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Wed May 12 05:53:49 PDT 2004
+users/peachey/evtbin/src
+
+Modified Files:
+	LinearBinner.cxx LogBinner.cxx 
+Log Message:
+Add abstraction for intervals, and methods to access the intervals
+in binners.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed May 12 05:53:49 PDT 2004
 users/peachey/evtbin/evtbin
 
 Modified Files:
