@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  4 14:36:23 PST 2005
+evtbin/src
+
+Modified Files:
+	ConstSnBinner.cxx 
+Log Message:
+Clean up the bin computation a bit.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  4 14:35:19 PST 2005
 evtbin/src/test
 
