@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Jan 24 13:55:39 PST 2005
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Include name and version string.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Jan 24 13:55:13 PST 2005
 evtbin/src
 
