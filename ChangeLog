@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Sun Sep 26 12:20:11 PDT 2004
+evtbin/evtbin
+
+Modified Files:
+	DataProduct.h 
+Log Message:
+Remove unnecessary readGti method.
+    *
+------------------------------------------------------------
 User: peachey  Sun Sep 26 11:51:30 PDT 2004
 evtbin/src/test
 
