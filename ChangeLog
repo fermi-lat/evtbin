@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Jun  3 07:34:41 PDT 2004
+users/peachey/evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Pass names of RA and DEC columns to CountMap constructor.
+    *
+------------------------------------------------------------
 User: peachey  Thu Jun  3 07:34:08 PDT 2004
 users/peachey/evtbin/src
 
