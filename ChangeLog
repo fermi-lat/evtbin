@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr  5 08:24:03 PDT 2005
+evtbin/src/gtbin
+
+Modified Files:
+	gtbin.cxx 
+Log Message:
+Accept 'none' as a valid spacecraft name, in which case exposure
+calculation just returns ontime.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Mar 23 09:45:48 PST 2005
 evtbin/data/outref
 
