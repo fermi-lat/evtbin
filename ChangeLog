@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Thu Aug  5 15:05:51 PDT 2004
+evtbin/src
+
+Modified Files:
+	Hist1D.cxx Hist2D.cxx 
+Log Message:
+Use doubles instead of integral type for counts, and allow optional
+weighting.
+    *
+------------------------------------------------------------
+User: peachey  Thu Aug  5 15:05:51 PDT 2004
 evtbin/evtbin
 
 Modified Files:
