@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Oct  6 12:50:55 PDT 2004
+evtbin/src/gtbindef
+
+Added Files:
+	gtbindef.cxx 
+Log Message:
+New utility to assist with writing bin definition files.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Oct  6 12:50:02 PDT 2004
 evtbin/data
 
