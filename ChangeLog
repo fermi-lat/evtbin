@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Mon May 17 08:00:57 PDT 2004
+users/peachey/evtbin/src
+
+Modified Files:
+	LightCurve.cxx 
+Log Message:
+Add support for updating lists of standard keywords, including the
+DATE keyword, which is generated.
+    *
+------------------------------------------------------------
+User: peachey  Mon May 17 08:00:57 PDT 2004
 users/peachey/evtbin/evtbin
 
 Modified Files:
