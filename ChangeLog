@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: peachey  Thu May 20 14:25:11 PDT 2004
+users/peachey/evtbin/src
+
+Modified Files:
+	LinearBinner.cxx 
+Log Message:
+Change parameterization of LinearBinner; third argument to the constructor
+is the size of the bins. Change the unit test so that it verifies correct
+behavior in cases in which the interval size is not an integral multiple
+of the bin size.
+
+    *
+------------------------------------------------------------
+User: peachey  Thu May 20 14:25:11 PDT 2004
 users/peachey/evtbin/evtbin
 
 Modified Files:
