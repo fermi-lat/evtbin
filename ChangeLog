@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Jun  3 07:35:05 PDT 2004
+users/peachey/evtbin/src/evtbin
+
+Modified Files:
+	evtbin.cxx 
+Log Message:
+Add support for making count maps using CountMap class.
+    *
+------------------------------------------------------------
 User: peachey  Thu Jun  3 07:34:41 PDT 2004
 users/peachey/evtbin/src/test
 
