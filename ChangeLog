@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Oct  6 12:58:36 PDT 2004
+evtbin/data/outref
+
+Added Files:
+	energybins.fits timebins.fits 
+Log Message:
+Sample bin definition file.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Oct  6 12:57:45 PDT 2004
 evtbin/data
 
