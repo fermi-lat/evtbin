@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Wed May 26 09:11:33 PDT 2004
+users/peachey/evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Begin to add count map generation. Something is not quite right still.
+    *
+------------------------------------------------------------
+User: peachey  Wed May 26 09:11:33 PDT 2004
 users/peachey/evtbin/src
 
 Added Files:
