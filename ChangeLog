@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu Jul  1 19:25:55 PDT 2004
+users/peachey/evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Center the image a bit better. Disable test with invalid projection
+for now.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun 30 08:36:27 PDT 2004
 users/peachey/evtbin/src
 
