@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Fri Feb  4 06:05:17 PST 2005
+evtbin/src
+
+Added Files:
+	ConstSnBinner.cxx 
+Log Message:
+Add constant signal-noise binner.
+
+    *
+------------------------------------------------------------
+User: peachey  Fri Feb  4 06:05:17 PST 2005
 evtbin/evtbin
 
 Added Files:
