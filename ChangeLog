@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed May  5 11:42:10 PDT 2004
+users/peachey/evtbin/src/evtbin
+
+Added Files:
+	evtbin.cxx 
+Log Message:
+New event binner application.
+    *
+------------------------------------------------------------
 User: peachey  Tue May  4 07:23:04 PDT 2004
 users/peachey/evtbin
 
