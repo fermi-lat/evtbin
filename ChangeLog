@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu May 27 08:51:25 PDT 2004
+users/peachey/evtbin/evtbin
+
+Modified Files:
+	Binner.h 
+Added Files:
+	OrderedBinner.h 
+Log Message:
+Add and test OrderedBinner class to handle client-defined bins.
+    *
+------------------------------------------------------------
 User: peachey  Wed May 26 09:57:30 PDT 2004
 users/peachey/evtbin/src/test
 
