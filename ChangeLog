@@ -1,0 +1,26 @@
+------------------------------------------------------------
+User: peachey  Tue May  4 07:23:04 PDT 2004
+users/peachey/evtbin
+
+Log Message:
+New event binning package.
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0
+		
+N users/peachey/evtbin/cmt/requirements
+N users/peachey/evtbin/src/mainpage.h
+N users/peachey/evtbin/src/evtbin/TipBinner.cxx
+N users/peachey/evtbin/src/evtbin/TipEqualLinearBinner.cxx
+N users/peachey/evtbin/src/test/test_bin.cxx
+N users/peachey/evtbin/evtbin/TipBinner.h
+N users/peachey/evtbin/evtbin/TipEqualLinearBinner.h
+N users/peachey/evtbin/data/LatLightCurveTemplate
+N users/peachey/evtbin/data/D1.fits
+N users/peachey/evtbin/doc/release.notes
+
+No conflicts created by this import
+
+    *
