@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Jun  2 09:27:14 PDT 2004
+users/peachey/evtbin/evtbin
+
+Added Files:
+	BinConfig.h 
+Log Message:
+New helper class for configuring standard types of binners using
+parameters from st_app/hoops.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun  2 09:26:35 PDT 2004
 users/peachey/evtbin/pfiles
 
