@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu May 27 13:56:27 PDT 2004
+users/peachey/evtbin/src/evtbin
+
+Modified Files:
+	evtbin.cxx 
+Log Message:
+Support user-defined bins for single spectrum.
+    *
+------------------------------------------------------------
 User: peachey  Thu May 27 13:46:22 PDT 2004
 users/peachey/evtbin/data/outref
 
