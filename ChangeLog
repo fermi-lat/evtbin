@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Mon May 10 12:30:37 PDT 2004
+users/peachey/evtbin/src
+
+Added Files:
+	Hist1D.cxx Hist2D.cxx 
+Log Message:
+New abstractions for 1 and 2-D histograms.
+    *
+------------------------------------------------------------
+User: peachey  Mon May 10 12:30:37 PDT 2004
 users/peachey/evtbin/evtbin
 
 Added Files:
