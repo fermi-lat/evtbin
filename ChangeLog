@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Aug 16 10:24:27 PDT 2004
+evtbin/src
+
+Modified Files:
+	CountMap.cxx LightCurve.cxx MultiSpec.cxx 
+Log Message:
+Change constructor to construct directly from event file, and 
+to call harvestKeywords, adjustTimeKeywords, adjustGti and writeEbounds as appropriate.
+    *
+------------------------------------------------------------
 User: peachey  Mon Aug 16 10:20:44 PDT 2004
 evtbin/src/evtbin
 
