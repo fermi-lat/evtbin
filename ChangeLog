@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Mar  4 14:37:04 PST 2005
+evtbin/src/gtbin
+
+Modified Files:
+	gtbin.cxx 
+Log Message:
+Work with latest changes, plus general cleanup.
+
+    *
+------------------------------------------------------------
 User: peachey  Fri Mar  4 14:36:23 PST 2005
 evtbin/src
 
