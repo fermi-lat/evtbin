@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Jul  1 19:27:29 PDT 2004
+users/peachey/evtbin/src
+
+Modified Files:
+	SingleSpec.cxx 
+Log Message:
+Use keV instead of MeV. Xspec needs keV.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu Jul  1 19:25:55 PDT 2004
 users/peachey/evtbin/src/test
 
