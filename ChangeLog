@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed Oct  6 12:44:21 PDT 2004
+evtbin/src
+
+Modified Files:
+	BinConfig.cxx 
+Log Message:
+Use new bin definition file formats which are equivalent to GTI
+for time and EBOUNDS for energy binning.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Oct  6 12:43:08 PDT 2004
 evtbin/src/gtbindef
 
