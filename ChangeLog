@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: peachey  Sun Sep 26 11:51:30 PDT 2004
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Use new overload of binInput to bin all events in the file.
+    *
+------------------------------------------------------------
+User: peachey  Sun Sep 26 11:51:30 PDT 2004
 evtbin/src/evtbin
 
 Modified Files:
