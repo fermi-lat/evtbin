@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu Jun  3 07:32:30 PDT 2004
+users/peachey/evtbin/evtbin
+
+Modified Files:
+	BinConfig.h 
+Log Message:
+Add method which handles prompting for spatial binning parameters.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun  2 09:59:26 PDT 2004
 users/peachey/evtbin/src/evtbin
 
