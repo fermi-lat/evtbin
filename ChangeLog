@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Sat Oct  9 13:15:51 PDT 2004
+evtbin/src
+
+Modified Files:
+	BinConfig.cxx 
+Log Message:
+Convert to MeV when creating a binner from EBOUNDS as well
+as from ENERGYBINS tables.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Oct  6 13:37:31 PDT 2004
 evtbin/doc
 
