@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Thu May  6 08:16:30 PDT 2004
+users/peachey/evtbin/src/evtbin
+
+Modified Files:
+	evtbin.cxx 
+Log Message:
+Add functionality for simple spectrum with logarithmic bins.
+    *
+------------------------------------------------------------
 User: peachey  Thu May  6 08:14:06 PDT 2004
 users/peachey/evtbin/src/test
 
