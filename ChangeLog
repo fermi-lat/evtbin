@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed Aug 18 18:11:22 PDT 2004
+evtbin/pfiles
+
+Modified Files:
+	evtbin.par test_evtbin.par 
+Log Message:
+Change type of file parameters from f to s, and add default value
+of NONE for the hidden file parameters, and all file parameters for the
+test par file.
+    *
+------------------------------------------------------------
 User: peachey  Wed Aug 18 17:34:23 PDT 2004
 evtbin/data/outref
 
