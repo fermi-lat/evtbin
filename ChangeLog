@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Jun  2 09:59:26 PDT 2004
+users/peachey/evtbin/src/evtbin
+
+Modified Files:
+	evtbin.cxx 
+Log Message:
+Use BinConfig for energy binners as well.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun  2 09:30:22 PDT 2004
 users/peachey/evtbin/src/evtbin
 
