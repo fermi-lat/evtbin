@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Oct 13 09:33:18 PDT 2004
+evtbin/data
+
+Modified Files:
+	LatBinnedTemplate LatSingleBinnedTemplate 
+Log Message:
+Make EQUINOX keyword floating point also.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Oct 13 09:23:49 PDT 2004
 evtbin/data
 
