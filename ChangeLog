@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Oct  5 19:27:55 PDT 2004
+evtbin/data
+
+Added Files:
+	LatEnergyBinDef.tpl LatTimeBinDef.tpl 
+Log Message:
+New templates for creating bin definition files.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Oct  5 19:27:12 PDT 2004
 evtbin/data
 
