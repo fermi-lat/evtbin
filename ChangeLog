@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu May 13 09:54:18 PDT 2004
+users/peachey/evtbin/src
+
+Removed Files:
+	TipBinner.cxx TipEqualLinearBinner.cxx TipBinner2D.cxx 
+	TipEqualLogBinner.cxx 
+Log Message:
+Removing classes which were refactored.
+    *
+------------------------------------------------------------
 User: peachey  Thu May 13 09:53:40 PDT 2004
 users/peachey/evtbin/evtbin
 
