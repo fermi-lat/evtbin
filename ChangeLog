@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Thu May 27 09:11:47 PDT 2004
+users/peachey/evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Add test for correct classification of values on the endpoints of the
+binner's first and last intervals.
+
+    *
+------------------------------------------------------------
 User: peachey  Thu May 27 08:51:25 PDT 2004
 users/peachey/evtbin/src/test
 
