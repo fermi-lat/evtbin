@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Wed Jun 15 09:31:31 PDT 2005
+evtbin/src
+
+Added Files:
+	BayesianBinner.cxx 
+Log Message:
+Add BayesianBinner class, imported from burstFit package.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed Jun 15 09:31:31 PDT 2005
 evtbin/evtbin
 
 Added Files:
