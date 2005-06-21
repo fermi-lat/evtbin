@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Tue Jun 21 08:37:23 PDT 2005
+evtbin/src
+
+Modified Files:
+	CountMap.cxx 
+Log Message:
+For JIRA issue STGEN-15, set CTYPE1, CTYPE2 correctly for the
+current coordinate system and projection.
+
+    *
+------------------------------------------------------------
+User: peachey  Tue Jun 21 08:37:23 PDT 2005
 evtbin/evtbin
 
 Modified Files:
