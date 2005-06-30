@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Jun 30 05:18:11 PDT 2005
+evtbin/evtbin
+
+Modified Files:
+	BayesianBinner.h 
+Log Message:
+Define s_ncp_prior in the source file rather than inline.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r10p0, operation: add
 Package: evtbin
