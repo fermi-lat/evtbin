@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Thu Jul  7 12:13:53 PDT 2005
+evtbin/src
+
+Modified Files:
+	BayesianBinner.cxx 
+Log Message:
+Change ncp_prior to be a non-static double member, with default
+constructor value of 9., not 6.
+
+    *
+------------------------------------------------------------
+User: peachey  Thu Jul  7 12:13:53 PDT 2005
 evtbin/evtbin
 
 Modified Files:
