@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Aug  2 07:13:35 PDT 2005
+evtbin/data
+
+Modified Files:
+	ft1tiny.fits 
+Log Message:
+Put 2 entries in GTI instead of 1. Have them cover the same range,
+but with a gap in the middle.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Aug  2 07:12:53 PDT 2005
 evtbin/data
 
