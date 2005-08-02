@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Aug  2 07:16:01 PDT 2005
+evtbin/src
+
+Modified Files:
+	MultiSpec.cxx 
+Log Message:
+Use a SingleSpec object to compute exposure for each individual spectrum,
+and store result in the EXPOSURE column.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Aug  2 07:15:03 PDT 2005
 evtbin/src
 
