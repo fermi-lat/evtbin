@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Aug  2 07:16:22 PDT 2005
+evtbin/evtbin
+
+Modified Files:
+	MultiSpec.h 
+Log Message:
+Store name of spacecraft file.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Aug  2 07:16:01 PDT 2005
 evtbin/src
 
