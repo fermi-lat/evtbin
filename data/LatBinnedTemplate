@@ -10,7 +10,7 @@ DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 OBSERVER = 'Michelson'          / PI name
 CREATOR  =                      / Software and version creating file
-HISTORY                     $Id: LatBinnedTemplate,v 1.5 2004/10/13 16:33:18 peachey Exp $
+HISTORY                     $Id: LatBinnedTemplate,v 1.6 2005/04/05 21:06:39 peachey Exp $
 END
 
 ##################################################################################
@@ -33,7 +33,7 @@ HDUCLAS4 =               PHA:II / Single PHA dataset
 HDUVERS  =                1.2.0 / Version number of the format
 DETCHANS =                    0 / Total number of detector channels available
 POISSERR =                    T / Whether Poissonian errors are appropriate to the data
-EXPOSURE =                      / Total livetime in seconds
+#EXPOSURE =                      / Total livetime in seconds
 BACKFILE =                 NONE / Name of background file (if any)
 CORRFILE =                 NONE / Name of correction file (if any)
 CORRSCAL =                   1. / Correction scaling factor.
@@ -53,7 +53,7 @@ DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 NDSKEYS =                     0 / Number of data subspace keywords in header
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatBinnedTemplate,v 1.5 2004/10/13 16:33:18 peachey Exp $ 
+HISTORY                   $Id: LatBinnedTemplate,v 1.6 2005/04/05 21:06:39 peachey Exp $ 
 
 
 
@@ -62,10 +62,6 @@ TFORM#  D                       / Data format of this field
 
 TTYPE#  TELAPSE                 / Label for this field
 TFORM#  D                       / Data format of this field
-
-#TTYPE#  EXPOSURE                / Label for this field
-#TFORM#  D                       / Data format of this field
-#TUNIT#  s                       / Unit of this field
 
 TTYPE#  SPEC_NUM                / Label for this field
 TFORM#  I                       / Data format of this field
@@ -110,6 +106,10 @@ TUNIT#  Counts                  / Unit of this field
 TTYPE#  ROWID                   / Unique identifier for each spectrum
 TFORM#  A                       / Data format of this field
 
+TTYPE#  EXPOSURE                / Label for this field
+TFORM#  D                       / Data format of this field
+TUNIT#  s                       / Unit of this field
+
 
 ##################################################################################
 XTENSION =             BINTABLE / Binary table extension
@@ -133,7 +133,7 @@ HDUVERS  =                1.2.0 / Version number of the format
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatBinnedTemplate,v 1.5 2004/10/13 16:33:18 peachey Exp $ 
+HISTORY                   $Id: LatBinnedTemplate,v 1.6 2005/04/05 21:06:39 peachey Exp $ 
 
 
 TTYPE#  CHANNEL        / Raw channel number
@@ -173,7 +173,7 @@ TIMEUNIT =                    s / All times are in seconds unless specified othe
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 CREATOR  =                      / Software and version creating file
-HISTORY                   $Id: LatBinnedTemplate,v 1.5 2004/10/13 16:33:18 peachey Exp $ 
+HISTORY                   $Id: LatBinnedTemplate,v 1.6 2005/04/05 21:06:39 peachey Exp $ 
 
 
 
