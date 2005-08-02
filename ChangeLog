@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Aug  2 07:12:53 PDT 2005
+evtbin/data
+
+Modified Files:
+	ft2tiny.fits 
+Log Message:
+Make LIVETIME and DEADTIME (slightly) more interesting than 30/0.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Aug  1 08:24:47 PDT 2005
 evtbin/src
 
