@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Aug  2 07:14:06 PDT 2005
+evtbin/data
+
+Modified Files:
+	LatBinnedTemplate 
+Log Message:
+Make exposure into a column instead of a keyword.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Aug  2 07:13:35 PDT 2005
 evtbin/data
 
