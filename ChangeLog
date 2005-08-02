@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Aug  2 07:15:03 PDT 2005
+evtbin/src
+
+Modified Files:
+	DataProduct.cxx 
+Log Message:
+Handle case of an empty GTI.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Aug  2 07:14:06 PDT 2005
 evtbin/data
 
