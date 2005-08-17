@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Aug 17 12:11:58 PDT 2005
+evtbin/evtbin
+
+Modified Files:
+	DataProduct.h 
+Log Message:
+Harvest and write DSS keywords from input file into all output files.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Aug  2 13:33:40 PDT 2005
 evtbin/data/outref
 
