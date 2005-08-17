@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed Aug 17 12:11:59 PDT 2005
+evtbin/src
+
+Modified Files:
+	CountMap.cxx DataProduct.cxx LightCurve.cxx MultiSpec.cxx 
+	SingleSpec.cxx 
+Log Message:
+Harvest and write DSS keywords from input file into all output files.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Aug 17 12:11:58 PDT 2005
 evtbin/evtbin
 
