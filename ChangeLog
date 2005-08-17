@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Aug 17 12:12:23 PDT 2005
+evtbin/data/outref
+
+Modified Files:
+	CM2.fits LC1.lc PHA1.pha PHA2.pha 
+Log Message:
+Regenerated to include DSS keywords.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Aug 17 12:11:59 PDT 2005
 evtbin/src
 
