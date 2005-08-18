@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Thu Aug 18 06:36:29 PDT 2005
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Integrate tests of Gti class which were in rspgen package.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Aug 17 12:12:23 PDT 2005
 evtbin/data/outref
 
