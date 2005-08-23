@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Aug 23 08:33:46 PDT 2005
+evtbin/pfiles
+
+Modified Files:
+	gtbin.par 
+Log Message:
+Tailor the logic/order of parameters to improve the look of the GUI.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r12, operation: add
 Package: evtbin
