@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Mon Sep 12 12:12:29 PDT 2005
+evtbin/src
+
+Modified Files:
+	CountMap.cxx DataProduct.cxx LightCurve.cxx MultiSpec.cxx 
+	SingleSpec.cxx 
+Log Message:
+Make name of spacecraft file's data table into a parameter, instead of
+hard-wiring it.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon Sep 12 12:12:29 PDT 2005
 evtbin/pfiles
 
 Modified Files:
