@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Mon Sep 12 12:12:29 PDT 2005
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Make name of spacecraft file's data table into a parameter, instead of
+hard-wiring it.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon Sep 12 12:12:29 PDT 2005
 evtbin/src/gtbin
 
 Modified Files:
