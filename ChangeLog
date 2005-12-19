@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Mon Dec 19 08:14:21 PST 2005
+evtbin/evtbin
+
+Modified Files:
+	Gti.h 
+Log Message:
+Add Gti::operator !(const Gti &) const method.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon Dec 19 08:14:21 PST 2005
 evtbin/src/test
 
 Modified Files:
