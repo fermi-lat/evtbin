@@ -59,7 +59,7 @@
 
 using namespace evtbin;
 
-const std::string s_cvs_id("$Name:  $");
+const std::string s_cvs_id("$Name: v0r13p1 $");
 
 /** \class EvtBinTest
     \brief Application singleton for evtbin test program.
@@ -1035,6 +1035,72 @@ void EvtBinTest::testGti() {
   }
   if (++gti_pos != spec_gti.end()) {
     std::cerr << "Unexpected: testGti: GTI contained within interval, iterator was not incremented" << std::endl;
+    m_failed = true;
+  }
+
+  // Test logical or of two gtis.
+  gti5 = Gti();
+  gti5.insertInterval(1., 2.);
+  gti5.insertInterval(3., 4.);
+  gti5.insertInterval(5., 6.);
+
+  gti6 = Gti();
+  gti6.insertInterval(2., 2.5);
+  gti6.insertInterval(3.5, 4.5);
+  gti6.insertInterval(6.5, 7.5);
+
+  correct_result = Gti();
+  correct_result.insertInterval(1., 2.5);
+  correct_result.insertInterval(3., 4.5);
+  correct_result.insertInterval(5., 6.);
+  correct_result.insertInterval(6.5, 7.5);
+
+  // Try or-ing two interleaving Gtis.
+  result = Gti();
+  result = gti5 | gti6;
+  if (result != correct_result) {
+    std::cerr << "Unexpected: testGti: after gti5 | gti6, result was:\n" <<
+      result << "\n, not\n" << correct_result << "\nas expected." << std::endl;
+    m_failed = true;
+  }
+
+  result = Gti();
+  result = gti6 | gti5;
+  if (result != correct_result) {
+    std::cerr << "Unexpected: testGti: after gti6 | gti5, result was:\n" <<
+      result << "\n, not\n" << correct_result << "\nas expected." << std::endl;
+    m_failed = true;
+  }
+
+  // Try or-ing two empty Gtis
+  gti3 = Gti();
+  gti4 = Gti();
+  correct_result = Gti();
+  result = Gti();
+  result = gti3 | gti4;
+  if (result != correct_result) {
+    std::cerr << "Unexpected: testGti: after gti3 | gti4, result was:\n" <<
+      result << "\n, not\n" << correct_result << "\nas expected." << std::endl;
+    m_failed = true;
+  }
+
+  // Try or-ing one empty, one non-empty Gti.
+  correct_result = gti6;
+  result = Gti();
+  result = gti4 | gti6;
+  if (result != correct_result) {
+    std::cerr << "Unexpected: testGti: after gti4 | gti6, result was:\n" <<
+      result << "\n, not\n" << correct_result << "\nas expected." << std::endl;
+    m_failed = true;
+  }
+
+  // Try or-ing one non-empty, one empty Gti.
+  correct_result = gti5;
+  result = Gti();
+  result = gti5 | gti3;
+  if (result != correct_result) {
+    std::cerr << "Unexpected: testGti: after gti5 | gti3, result was:\n" <<
+      result << "\n, not\n" << correct_result << "\nas expected." << std::endl;
     m_failed = true;
   }
 
