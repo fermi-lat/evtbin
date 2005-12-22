@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: peachey  Wed Dec 21 23:35:28 PST 2005
+evtbin/evtbin
+
+Modified Files:
+	Gti.h 
+Log Message:
+Add and test code which handles two intervals with the same start time.
+Because a map is now used for the intervals, it is necessary to check
+for this "tie" explicitly to prevent loss of information.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Dec 21 22:30:55 PST 2005
 evtbin/src
 
