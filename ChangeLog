@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed Dec 21 20:52:04 PST 2005
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Change ncp_prior argument to constructor in Bayesian unit test back to 6.
+to restore the unit test to working condition.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Dec 21 20:50:03 PST 2005
 evtbin/data/outref
 
