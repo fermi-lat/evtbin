@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Wed Dec 21 23:35:29 PST 2005
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Add and test code which handles two intervals with the same start time.
+Because a map is now used for the intervals, it is necessary to check
+for this "tie" explicitly to prevent loss of information.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed Dec 21 23:35:29 PST 2005
 evtbin/src
 
 Modified Files:
