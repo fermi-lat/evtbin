@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Wed Dec 21 20:46:13 PST 2005
+evtbin/src
+
+Modified Files:
+	DataProduct.cxx 
+Log Message:
+Add a harvestKeywords method which harvests all keywords from a series
+of input files.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed Dec 21 20:46:13 PST 2005
 evtbin/evtbin
 
 Modified Files:
