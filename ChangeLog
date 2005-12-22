@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Dec 21 20:49:18 PST 2005
+evtbin/data
+
+Added Files:
+	ft1filelist ft1tiny0.fits ft1tiny1.fits ft1tiny2.fits 
+Log Message:
+New test data for testing input of multiple files using @infile syntax.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Dec 21 20:48:08 PST 2005
 evtbin/src/test
 
