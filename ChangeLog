@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Dec 21 22:30:55 PST 2005
+evtbin/src
+
+Modified Files:
+	Gti.cxx 
+Log Message:
+Relax restriction on valid Gti; permit one of 0 length.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Dec 21 22:14:51 PST 2005
 evtbin/src
 
