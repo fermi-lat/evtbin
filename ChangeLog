@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Tue Jan  3 13:21:49 PST 2006
+evtbin/data
+
+Modified Files:
+	ft1filelist 
+Log Message:
+Use EVTBINROOT environment variable instead of relative path to find
+data files.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r14, operation: add
 Package: evtbin
