@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Wed Jan  4 06:46:53 PST 2006
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Do not use variable name for exceptions which are ignored, thus
+eliminating warning on Windows about unused variables.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r14p1, operation: add
 Package: evtbin
