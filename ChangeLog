@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Wed Jan 11 09:57:09 PST 2006
+evtbin/src
+
+Modified Files:
+	DataProduct.cxx 
+Log Message:
+Add and test accessors getHist1D and getHist2D for DataProduct class.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed Jan 11 09:57:09 PST 2006
 evtbin/evtbin
 
 Modified Files:
