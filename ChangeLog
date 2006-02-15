@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Feb 15 14:16:11 PST 2006
+evtbin/data
+
+Added Files:
+	ft1small.fits ft2small.fits ft2tiny0.fits ft2tiny1.fits 
+Log Message:
+New files for test of multiple spacecraft file mode.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r15p1, operation: add
 Package: evtbin
