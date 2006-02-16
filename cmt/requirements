@@ -3,13 +3,14 @@ package evtbin
 version v0
 
 author James Peachey <peachey@milkyway.gsfc.nasa.gov>
-# $Id$
+# $Id: requirements,v 1.8 2006/01/30 14:37:39 peachey Exp $
 
 use CLHEP * IExternal
 use STpolicy *
 use astro *
 use st_app *
 use st_facilities *
+use st_stream *
 use tip *
 
 apply_pattern ST_library option=-no_share
