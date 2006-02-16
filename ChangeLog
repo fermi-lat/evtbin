@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Feb 15 20:48:26 PST 2006
+evtbin/evtbin
+
+Modified Files:
+	DataProduct.h 
+Log Message:
+Use st_stream, and improve warnings about 0. exposure situations.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Feb 15 20:48:11 PST 2006
 evtbin/src
 
