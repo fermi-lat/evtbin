@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Tue Mar 21 09:51:48 PST 2006
+evtbin/src
+
+Modified Files:
+	BayesianBinner.cxx 
+Log Message:
+Remove unneccessary usage of CLHEP.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Mar 21 09:51:47 PST 2006
 evtbin/cmt
 
