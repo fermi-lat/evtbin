@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Wed May  3 06:57:04 PDT 2006
+evtbin/src
+
+Modified Files:
+	Hist2D.cxx CountMap.cxx 
+Log Message:
+Add and use Hist2D::getImage to copy a 2-d histogram into a column-major
+float image, in order to write the output image in one fell swoop to speed
+up cfitsio's writing of the output.
+
+    *
+------------------------------------------------------------
+User: peachey  Wed May  3 06:57:04 PDT 2006
 evtbin/evtbin
 
 Modified Files:
