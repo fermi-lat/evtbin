@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Oct  2 09:19:29 PDT 2006
+evtbin/pfiles
+
+Modified Files:
+	gtbin.par 
+Log Message:
+Add CCUBE as option for algorithm, and tweak some defaults.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r17, operation: add
 Package: evtbin
