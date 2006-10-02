@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: peachey  Mon Oct  2 09:20:37 PDT 2006
+evtbin/src
+
+Added Files:
+	CountCube.cxx 
+Log Message:
+New class to support making count cubes, binned in 2 spatial + energy dimensions.
+
+    *
+------------------------------------------------------------
+User: peachey  Mon Oct  2 09:20:37 PDT 2006
 evtbin/evtbin
 
 Added Files:
