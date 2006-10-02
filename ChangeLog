@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Mon Oct  2 09:21:04 PDT 2006
+evtbin/evtbin
+
+Added Files:
+	Hist3D.h 
+Log Message:
+New class providing 3d histogram for support of data cubes.
+
+    *
+------------------------------------------------------------
 User: peachey  Mon Oct  2 09:20:37 PDT 2006
 evtbin/src
 
