@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: peachey  Tue Apr  3 08:42:04 PDT 2007
+evtbin/data/outref
+
+Modified Files:
+	CM2.fits GBMLC1.lc LC1.lc PHA1.pha PHA2.pha 
+	merged_spectrum.pha separate_spectrum.pha 
+Added Files:
+	GBMPHA1.pha 
+Log Message:
+Regenerated test data files based on DC2 data. Regenerated associated test
+output data products. Updated test code to work correctly with new inputs.
+
+    *
+------------------------------------------------------------
+User: peachey  Tue Apr  3 08:42:04 PDT 2007
 evtbin/data
 
 Modified Files:
