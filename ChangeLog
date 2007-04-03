@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Tue Apr  3 08:42:04 PDT 2007
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+Regenerated test data files based on DC2 data. Regenerated associated test
+output data products. Updated test code to work correctly with new inputs.
+
+    *
+------------------------------------------------------------
+User: peachey  Tue Apr  3 08:42:04 PDT 2007
 evtbin/data/outref
 
 Modified Files:
