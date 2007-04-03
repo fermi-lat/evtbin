@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: peachey  Tue Apr  3 08:42:04 PDT 2007
+evtbin/data
+
+Modified Files:
+	ft1tiny.fits ft1tiny0.fits ft1tiny1.fits ft1tiny2.fits 
+	ft2filelist ft2tiny.fits ft2tiny0.fits ft2tiny1.fits 
+Added Files:
+	README.txt 
+Log Message:
+Regenerated test data files based on DC2 data. Regenerated associated test
+output data products. Updated test code to work correctly with new inputs.
+
+    *
+------------------------------------------------------------
 User: peachey  Tue Apr  3 08:36:21 PDT 2007
 evtbin/data
 
