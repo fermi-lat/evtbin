@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: elwinter  Thu May  3 07:19:17 PDT 2007
+evtbin/data
+
+Modified Files:
+	LatCountMapTemplate 
+Log Message:
+Moved NDSKEYS to primary header.
+
+    *
+------------------------------------------------------------
 User: elwinter  Tue Apr 24 08:41:50 PDT 2007
 evtbin/data
 
