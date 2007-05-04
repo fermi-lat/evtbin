@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: elwinter  Fri May  4 09:56:31 PDT 2007
+evtbin/pfiles
+
+Modified Files:
+	gtbin.par 
+Log Message:
+Changed proj to a non-hidden parameter.
+
+    *
+------------------------------------------------------------
 User: elwinter  Fri May  4 09:55:30 PDT 2007
 evtbin/src/test
 
