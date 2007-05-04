@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: elwinter  Fri May  4 09:55:30 PDT 2007
+evtbin/src/gtbin
+
+Modified Files:
+	gtbin.cxx 
+Log Message:
+Added support for EBOUNDS extension in CountCube products.
+Added test code for CountCube products.
+
+    *
+------------------------------------------------------------
 User: elwinter  Fri May  4 09:55:29 PDT 2007
 evtbin/src
 
