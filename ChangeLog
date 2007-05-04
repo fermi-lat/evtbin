@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: elwinter  Fri May  4 09:54:27 PDT 2007
+evtbin/evtbin
+
+Modified Files:
+	CountCube.h 
+Log Message:
+Added support for EBOUNDS extension.
+
+    *
+------------------------------------------------------------
 User: elwinter  Fri May  4 09:51:16 PDT 2007
 evtbin/data
 
