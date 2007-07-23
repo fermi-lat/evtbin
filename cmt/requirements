@@ -2,8 +2,8 @@ package evtbin
 
 version v0
 
-author James Peachey <peachey@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.9 2006/02/16 04:48:59 peachey Exp $
+author James Peachey <James.Peachey-1@nasa.gov>
+# $Id: requirements,v 1.10 2006/03/21 17:51:47 peachey Exp $
 
 use STpolicy *
 use astro *
