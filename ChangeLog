@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Fri Sep 28 07:11:31 PDT 2007
+evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+use commonUtilities for paths
+    *
+------------------------------------------------------------
+User: golpa  Fri Sep 28 07:11:31 PDT 2007
 evtbin/src/gtbindef
 
 Modified Files:
