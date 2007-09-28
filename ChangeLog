@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: golpa  Fri Sep 28 07:11:31 PDT 2007
+evtbin/src
+
+Modified Files:
+	CountCube.cxx CountMap.cxx DataProduct.cxx LightCurve.cxx 
+	MultiSpec.cxx SingleSpec.cxx 
+Log Message:
+use commonUtilities for paths
+    *
+------------------------------------------------------------
 User: peachey  Mon Jul 23 11:42:53 PDT 2007
 evtbin/cmt
 
