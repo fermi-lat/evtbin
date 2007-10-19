@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Fri Oct 19 14:12:08 PDT 2007
+evtbin/src
+
+Modified Files:
+	BayesianBinner.cxx 
+Log Message:
+Add check of input intervals for invalid (non-positive) widths.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r0p2, operation: add
 Package: evtbin
