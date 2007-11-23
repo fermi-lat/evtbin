@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: golpa  Fri Nov 23 09:43:45 PST 2007
+evtbin/data
+
+Modified Files:
+	ft1filelist ft2filelist 
+Log Message:
+changes to remove <PACKAGE>ROOT
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r0p3, operation: add
 Package: evtbin
