@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Jan 30 08:05:11 PST 2008
+evtbin
+
+Modified Files:
+	SConscript 
+Log Message:
+Fix name of unit test binary variable.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-00-04, operation: add
 Package: evtbin
