@@ -1,4 +1,99 @@
 ------------------------------------------------------------
+TAG
+Tag name: v2r0p4, operation: add
+Package: evtbin
+User: peachey  Wed Jan 30 07:54:59 2008
+Files:
+  evtbin/evtbinLib.py  1.1
+  evtbin/ChangeLog  1.409
+  evtbin/SConscript  1.2
+  evtbin/cmt/requirements  1.11
+  evtbin/data/timebins.fits  1.1
+  evtbin/data/energybins.fits  1.1
+  evtbin/data/LatSingleBinnedTemplate  1.6
+  evtbin/data/ft2tiny2.fits  1.1
+  evtbin/data/ft1filelist  1.3
+  evtbin/data/LatCountCubeTemplate  1.3
+  evtbin/data/ft1tiny1.fits  1.2
+  evtbin/data/ft1tiny0.fits  1.2
+  evtbin/data/LatLightCurveTemplate  1.4
+  evtbin/data/timebins.txt  1.1
+  evtbin/data/LatCountMapTemplate  1.5
+  evtbin/data/ft2small.fits  1.1
+  evtbin/data/LatTimeBinDef.tpl  1.2
+  evtbin/data/LatBinnedTemplate  1.7
+  evtbin/data/ft1small.fits  1.1
+  evtbin/data/ft2tiny0.fits  1.2
+  evtbin/data/ft1tiny.fits  1.4
+  evtbin/data/energybins.txt  1.1
+  evtbin/data/ft1tiny2.fits  1.2
+  evtbin/data/ft2tiny.fits  1.4
+  evtbin/data/README.txt  1.1
+  evtbin/data/ft2filelist  1.3
+  evtbin/data/LatEnergyBinDef.tpl  1.2
+  evtbin/data/ft2tiny1.fits  1.2
+  evtbin/data/gbmtiny.fits  1.2
+  evtbin/data/outref/PHA2.pha  1.14
+  evtbin/data/outref/PHA1.pha  1.13
+  evtbin/data/outref/GBMLC1.lc  1.3
+  evtbin/data/outref/test.ccube  1.1
+  evtbin/data/outref/separate_spectrum.pha  1.2
+  evtbin/data/outref/GBMPHA1.pha  1.1
+  evtbin/data/outref/LC1.lc  1.12
+  evtbin/data/outref/CM2.fits  1.11
+  evtbin/data/outref/merged_spectrum.pha  1.3
+  evtbin/doc/release.notes  1.42
+  evtbin/evtbin/OrderedBinner.h  1.3
+  evtbin/evtbin/BayesianBinner.h  1.3
+  evtbin/evtbin/CountMap.h  1.9
+  evtbin/evtbin/BinConfig.h  1.4
+  evtbin/evtbin/ConstSnBinner.h  1.1
+  evtbin/evtbin/DataProduct.h  1.14
+  evtbin/evtbin/Hist.h  1.3
+  evtbin/evtbin/Hist3D.h  1.1
+  evtbin/evtbin/MultiSpec.h  1.6
+  evtbin/evtbin/LinearBinner.h  1.5
+  evtbin/evtbin/RecordBinFiller.h  1.1
+  evtbin/evtbin/Hist2D.h  1.6
+  evtbin/evtbin/SingleSpec.h  1.6
+  evtbin/evtbin/LogBinner.h  1.4
+  evtbin/evtbin/Gti.h  1.5
+  evtbin/evtbin/Hist1D.h  1.5
+  evtbin/evtbin/CountCube.h  1.2
+  evtbin/evtbin/LightCurve.h  1.7
+  evtbin/evtbin/Binner.h  1.7
+  evtbin/pfiles/test_evtbin.par  1.8
+  evtbin/pfiles/gtbindef.par  1.2
+  evtbin/pfiles/gtbin.par  1.14
+  evtbin/src/MultiSpec.cxx  1.14
+  evtbin/src/Gti.cxx  1.7
+  evtbin/src/CountMap.cxx  1.15
+  evtbin/src/LinearBinner.cxx  1.5
+  evtbin/src/ConstSnBinner.cxx  1.2
+  evtbin/src/Hist.cxx  1.1
+  evtbin/src/CountCube.cxx  1.3
+  evtbin/src/DataProduct.cxx  1.22
+  evtbin/src/mainpage.h  1.12
+  evtbin/src/RecordBinFiller.cxx  1.1
+  evtbin/src/GlastGbmBinConfig.cxx  1.2
+  evtbin/src/GlastGbmBinConfig.h  1.1
+  evtbin/src/BinConfig.cxx  1.11
+  evtbin/src/GlastLatBinConfig.h  1.1
+  evtbin/src/GlastLatBinConfig.cxx  1.1
+  evtbin/src/BayesianBinner.cxx  1.7
+  evtbin/src/OrderedBinner.cxx  1.1
+  evtbin/src/Hist1D.cxx  1.5
+  evtbin/src/Hist2D.cxx  1.6
+  evtbin/src/LightCurve.cxx  1.13
+  evtbin/src/LogBinner.cxx  1.4
+  evtbin/src/SingleSpec.cxx  1.13
+  evtbin/src/Hist3D.cxx  1.1
+  evtbin/src/gtbin/gtbin.cxx  1.13
+  evtbin/src/gtbindef/gtbindef.cxx  1.2
+  evtbin/src/test/test_evtbin.cxx  1.43
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Jan 30 07:54:47 PST 2008
 evtbin/doc
 
