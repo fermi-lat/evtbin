@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Feb 25 19:10:49 PST 2008
+ScienceTools-scons/evtbin
+
+Modified Files:
+	evtbinLib.py SConscript 
+Log Message:
+Set lib dependencies up for when building libraries
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-00-05, operation: add
 Package: evtbin
