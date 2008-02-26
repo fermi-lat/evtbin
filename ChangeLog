@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+TAG
+Tag name: v2r0p5, operation: mov
+Package: evtbin
+User: glast  Mon Feb 25 19:11:21 2008
+Files:
+  evtbin/evtbinLib.py  1.2
+  evtbin/SConscript  1.4
+
+    *
+------------------------------------------------------------
 User: glastrm  Mon Feb 25 19:10:49 PST 2008
 ScienceTools-scons/evtbin
 
