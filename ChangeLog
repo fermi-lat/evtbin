@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Wed Mar 19 14:09:04 PDT 2008
+ScienceTools-scons/evtbin
+
+Modified Files:
+	SConscript 
+Log Message:
+Register data files
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-00-05, operation: mov
 Package: evtbin
