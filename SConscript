@@ -1,4 +1,8 @@
-#$Id: SConscript,v 1.4 2008/02/26 03:10:49 glastrm Exp $
+# -*- python -*-
+# $Id: SConscript,v 1.5 2008/03/19 21:09:04 glastrm Exp $
+# Authors: James Peachey <James.Peachey-1@nasa.gov>
+# Version: evtbin-02-00-05
+
 Import('baseEnv')
 Import('listFiles')
 progEnv = baseEnv.Clone()
