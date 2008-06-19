@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: evtbin-02-00-05, operation: mov
+Package: evtbin
+User: glastrm  Thu Jun 19 15:29:58 2008
+Files:
+  evtbin/SConscript  1.6
+
+    *
+------------------------------------------------------------
 User: glastrm  Thu Jun 19 15:29:49 PDT 2008
 ScienceTools-scons/evtbin
 
