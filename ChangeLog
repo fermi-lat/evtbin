@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: vernaleo  Wed Sep  3 11:06:59 PDT 2008
+evtbin/pfiles
+
+Modified Files:
+	gtbin.par 
+Log Message:
+Merge from GSSC with the following changes, STGEN-63 fix to gtbindef output format, STGEN-64 fixed gtbindef reporting on name and version number, STGEN-65 and STGEN-28 added an error column to gtbin output, STGEN-66 code and comment cleanup in gtbin, STGEN-67 and GRB-18 fixed CHANTYPE of gtbin output, STGEN-70 fixed MJDREF keywords in gtbin output, STGEN-71 corrected FILTER keyword, STGEN-72 and GRB-19 copy some GBM keywords, STGEN-73 let wcslib decide what projections can be used, STGEN-74 give gtbin reasonable default values for energy range, STGEN-75 do some additional error checking on the bin sizes, STGEN-76 take advantage of hoops change to get time range from input file, STGEN-77 calculate deadtime and correct EXPOSURE for GBM data, STGEN-78 fix bug with fits templates on OSX 10.5
+    *
+------------------------------------------------------------
+User: vernaleo  Wed Sep  3 11:06:59 PDT 2008
 evtbin/evtbin
 
 Modified Files:
