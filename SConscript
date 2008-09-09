@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Id: SConscript,v 1.6 2008/06/19 22:29:49 glastrm Exp $
+# $Id: SConscript,v 1.7 2008/09/03 19:30:58 glastrm Exp $
 # Authors: James Peachey <James.Peachey-1@nasa.gov>
-# Version: evtbin-02-01-00
+# Version: evtbin-02-01-01
 
 Import('baseEnv')
 Import('listFiles')
