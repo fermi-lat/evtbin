@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Sep  9 14:38:18 PDT 2008
+evtbin/src
+
+Modified Files:
+	CountCube.cxx CountMap.cxx 
+Log Message:
+Added #include <algorithm> where needed.
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-01-00, operation: add
 Package: evtbin
