@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: vernaleo  Thu Sep 11 09:03:23 PDT 2008
+evtbin/src
+
+Modified Files:
+	DataProduct.cxx 
+Log Message:
+Made a fix for compatibility with older compilers.
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-01-01, operation: add
 Package: evtbin
