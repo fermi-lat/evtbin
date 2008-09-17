@@ -1,5 +1,13 @@
 ------------------------------------------------------------
 TAG
+Tag name: ScienceTools-09-07-00, operation: del
+Package: evtbin
+User: glastrm  Wed Sep 17 13:11:48 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: evtbin-02-01-02, operation: add
 Package: evtbin
 User: glastrm  Thu Sep 11 09:30:45 2008
