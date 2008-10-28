@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: vernaleo  Tue Oct 28 08:22:44 PDT 2008
+evtbin/src
+
+Modified Files:
+	BinConfig.cxx GlastGbmBinConfig.cxx GlastLatBinConfig.cxx 
+Log Message:
+Added case insensitive matching for FERMI in TELESCOP keyword.
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-06-00, operation: del
 Package: evtbin
