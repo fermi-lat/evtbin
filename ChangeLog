@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: vernaleo  Tue Oct 28 10:02:36 PDT 2008
+evtbin/src
+
+Modified Files:
+	BinConfig.cxx 
+Log Message:
+Added header needed for mswindows.
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-02-00, operation: add
 Package: evtbin
