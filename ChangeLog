@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v2r2, operation: mov
+Package: evtbin
+User: glastrm  Tue Oct 28 08:30:43 2008
+Files:
+  evtbin/SConscript  1.10
+
+    *
+------------------------------------------------------------
 User: glastrm  Tue Oct 28 08:30:37 PDT 2008
 evtbin
 
