@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: vernaleo  Mon May 18 07:41:38 PDT 2009
+evtbin/data
+
+Modified Files:
+	LatEnergyBinDef.tpl LatTimeBinDef.tpl 
+Log Message:
+Merge change from FSSC cvs so gtbindef makes valid fits files with no warnings.
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-12-00, operation: add
 Package: evtbin
