@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: glastrm  Tue Jun 23 11:30:46 PDT 2009
+evtbin
+
+Modified Files:
+	SConscript 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r3, operation: add
 Package: evtbin
