@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: vernaleo  Tue Jun 23 10:28:04 PDT 2009
+evtbin/src
+
+Modified Files:
+	DataProduct.cxx LightCurve.cxx MultiSpec.cxx SingleSpec.cxx 
+Log Message:
+    *
+------------------------------------------------------------
 User: vernaleo  Tue Jun 23 10:28:03 PDT 2009
 evtbin/evtbin
 
