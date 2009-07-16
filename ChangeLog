@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: vernaleo  Thu Jul 16 09:46:42 PDT 2009
+evtbin/pfiles
+
+Modified Files:
+	gtbin.par 
+Log Message:
+Corrected typo in pfile listing seconds instead of MET
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-03-01, operation: add
 Package: evtbin
