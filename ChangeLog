@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: vernaleo  Tue Jul 21 13:54:32 PDT 2009
+evtbin
+
+Modified Files:
+	SConscript 
+Log Message:
+update version in scons file
+    *
+------------------------------------------------------------
 User: vernaleo  Tue Jul 21 13:31:49 PDT 2009
 evtbin/doc
 
