@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: elwinter  Thu Jul 30 10:00:36 PDT 2009
+evtbin/src/gtbin
+
+Modified Files:
+      Tag: ScienceToolsv9r15p2
+	gtbin.cxx 
+Log Message:
+Imported changes from FSSC.
+    *
+------------------------------------------------------------
+User: elwinter  Thu Jul 30 10:00:36 PDT 2009
 evtbin/pfiles
 
 Modified Files:
