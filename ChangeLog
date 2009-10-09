@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: vernaleo  Fri Oct  9 09:47:45 PDT 2009
+evtbin/src
+
+Modified Files:
+	BinConfig.cxx GlastGbmBinConfig.cxx 
+Log Message:
+Extra header files added to allow building on Ubuntu9.04/gcc4.3.3 (from elwinter)
+    *
+------------------------------------------------------------
 User: vernaleo  Fri Oct  9 09:45:56 PDT 2009
 evtbin/src
 
