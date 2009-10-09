@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: vernaleo  Fri Oct  9 09:45:55 PDT 2009
+evtbin/data
+
+Modified Files:
+	LatBinnedTemplate LatCountCubeTemplate LatCountMapTemplate 
+	LatLightCurveTemplate LatSingleBinnedTemplate 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-15-05, operation: add
 Package: evtbin
