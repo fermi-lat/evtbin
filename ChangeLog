@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: vernaleo  Fri Oct  9 09:45:56 PDT 2009
+evtbin/data/outref
+
+Modified Files:
+	CM2.fits GBMLC1.lc GBMPHA1.pha LC1.lc PHA1.pha PHA2.pha 
+	merged_spectrum.pha separate_spectrum.pha test.ccube 
+Log Message:
+    *
+------------------------------------------------------------
 User: vernaleo  Fri Oct  9 09:45:55 PDT 2009
 evtbin/data
 
