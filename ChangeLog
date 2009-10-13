@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: vernaleo  Tue Oct 13 09:03:46 PDT 2009
+evtbin/data
+
+Modified Files:
+	LatBinnedTemplate 
+Log Message:
+Accidentally had two of the keywords repeated in the pha2 files so this fixes that.
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-03-03, operation: add
 Package: evtbin
