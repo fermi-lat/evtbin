@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Id: SConscript,v 1.18 2009/10/09 16:51:40 vernaleo Exp $
+# $Id: SConscript,v 1.19 2009/10/13 16:06:48 vernaleo Exp $
 # Authors: James Peachey <James.Peachey-1@nasa.gov>
 # Version: evtbin-02-03-04
 
@@ -8,7 +8,6 @@ Import('listFiles')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
-libEnv.Tool('evtbinLib', depsOnly = 1)
 evtbinLib = libEnv.StaticLibrary('evtbin', listFiles(['src/*.cxx']))
 
 progEnv.Tool('evtbinLib')
