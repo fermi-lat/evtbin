@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+TAG
+Tag name: evtbin-02-03-05, operation: add
+Package: evtbin
+User: jrb  Mon Feb 22 12:48:01 2010
+Files:
+  evtbin/evtbinLib.py  1.2
+  evtbin/ChangeLog  1.541
+  evtbin/SConscript  1.21
+  evtbin/cmt/requirements  1.13
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Feb 22 12:47:55 PST 2010
 evtbin/cmt
 
