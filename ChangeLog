@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: peachey  Mon Apr 12 10:43:27 PDT 2010
+evtbin/src
+
+Modified Files:
+	CountCube.cxx CountMap.cxx DataProduct.cxx LightCurve.cxx 
+	MultiSpec.cxx SingleSpec.cxx 
+Log Message:
+Harvest history keywords from input extensions, and propagate them to the
+output file. EVENTS history is copied to the output table/image for each
+output data product. GTI history is copied to the GTI extension.
+    *
+------------------------------------------------------------
+User: peachey  Mon Apr 12 10:43:27 PDT 2010
 evtbin/evtbin
 
 Modified Files:
