@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: peachey  Mon Apr 12 10:43:27 PDT 2010
+evtbin/evtbin
+
+Modified Files:
+	DataProduct.h 
+Log Message:
+Harvest history keywords from input extensions, and propagate them to the
+output file. EVENTS history is copied to the output table/image for each
+output data product. GTI history is copied to the GTI extension.
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-16-01, operation: add
 Package: evtbin
