@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Jun  8 05:59:30 PDT 2010
+evtbin/evtbin
+
+Modified Files:
+	DataProduct.h 
+Log Message:
+fix compilation error in DataProduct on vc71
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-04-00, operation: add
 Package: evtbin
