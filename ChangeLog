@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jchiang  Mon Apr 25 20:51:27 PDT 2011
+ScienceTools-scons/evtbin/src
+
+Modified Files:
+	Gti.cxx 
+Log Message:
+add Gti::intervals() method
+    *
+------------------------------------------------------------
 User: jchiang  Mon Apr 25 20:51:16 PDT 2011
 ScienceTools-scons/evtbin/evtbin
 
