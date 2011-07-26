@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cdeng  Tue Jul 26 12:53:22 PDT 2011
+evtbin/data
+
+Modified Files:
+	LatBinnedTemplate LatSingleBinnedTemplate gbmtiny.fits 
+Log Message:
+STGEN 119 112 114 117
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-24-00, operation: add
 Package: evtbin
