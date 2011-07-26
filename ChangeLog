@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: cdeng  Tue Jul 26 12:53:23 PDT 2011
+evtbin/data/outref
+
+Modified Files:
+	CM2.fits GBMLC1.lc GBMPHA1.pha LC1.lc PHA1.pha PHA2.pha 
+	merged_spectrum.pha separate_spectrum.pha test.ccube 
+Log Message:
+STGEN 119 112 114 117
+    *
+------------------------------------------------------------
 User: cdeng  Tue Jul 26 12:53:22 PDT 2011
 evtbin/data
 
