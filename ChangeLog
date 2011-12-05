@@ -2,6 +2,40 @@
 TAG
 Tag name: ScienceTools-09-26-00, operation: add
 Package: evtbin
+User: jchiang  Mon Dec  5 15:52:24 2011
+Files:
+  evtbin/src/MultiSpec.cxx  1.17
+  evtbin/src/Gti.cxx  1.8
+  evtbin/src/CountMap.cxx  1.18
+  evtbin/src/LinearBinner.cxx  1.5
+  evtbin/src/ConstSnBinner.cxx  1.2
+  evtbin/src/Hist.cxx  1.1
+  evtbin/src/CountCube.cxx  1.6
+  evtbin/src/DataProduct.cxx  1.28
+  evtbin/src/mainpage.h  1.12
+  evtbin/src/RecordBinFiller.cxx  1.1
+  evtbin/src/GlastGbmBinConfig.cxx  1.4
+  evtbin/src/GlastGbmBinConfig.h  1.1
+  evtbin/src/BinConfig.cxx  1.15
+  evtbin/src/GlastLatBinConfig.h  1.1
+  evtbin/src/GlastLatBinConfig.cxx  1.2
+  evtbin/src/BayesianBinner.cxx  1.7
+  evtbin/src/OrderedBinner.cxx  1.1
+  evtbin/src/Hist1D.cxx  1.5
+  evtbin/src/LogBinner.cxx  1.4
+  evtbin/src/Hist2D.cxx  1.6
+  evtbin/src/LightCurve.cxx  1.16
+  evtbin/src/SingleSpec.cxx  1.16
+  evtbin/src/Hist3D.cxx  1.1
+  evtbin/src/gtbin/gtbin.cxx  1.15
+  evtbin/src/gtbindef/gtbindef.cxx  1.3
+  evtbin/src/test/test_evtbin.cxx  1.43
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-09-26-00, operation: add
+Package: evtbin
 User: jchiang  Mon Dec  5 15:52:11 2011
 Files:
   evtbin/evtbinLib.py  1.2
