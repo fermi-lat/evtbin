@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Jun  6 19:35:27 PDT 2012
+evtbin/src/gtbin
+
+Modified Files:
+	gtbin.cxx 
+Log Message:
+Check whether spacecraft file is required, and throw exception
+if a required spacecraft file is missing.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun  6 19:34:47 PDT 2012
 evtbin/src
 
