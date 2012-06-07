@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: peachey  Wed Jun  6 19:32:40 PDT 2012
+evtbin/src
+
+Modified Files:
+	GlastGbmBinConfig.h GlastLatBinConfig.h 
+Log Message:
+Add method requireScFile, which flags whether the given
+detector requires a spacecraft file (for computing exposure). LAT does,
+GBM data does not.
+    *
+------------------------------------------------------------
+User: peachey  Wed Jun  6 19:32:40 PDT 2012
 evtbin/evtbin
 
 Modified Files:
