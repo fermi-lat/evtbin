@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: peachey  Wed Jun  6 19:43:40 PDT 2012
+evtbin/data
+
+Modified Files:
+	ft1small.fits ft2small.fits 
+Log Message:
+Correct and add keywords for testing TRIGTIME, DETNAM, and extension name.
+
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun  6 19:35:27 PDT 2012
 evtbin/src/gtbin
 
