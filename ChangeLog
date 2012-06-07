@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Wed Jun  6 19:34:47 PDT 2012
+evtbin/src
+
+Modified Files:
+	DataProduct.cxx 
+Log Message:
+Issue a warning when no spacecraft file supplied for EXPOSIRE calculation.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun  6 19:32:40 PDT 2012
 evtbin/src
 
