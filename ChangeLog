@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: peachey  Tue Jun 12 07:43:45 PDT 2012
+evtbin/src/gtbin
+
+Modified Files:
+	gtbin.cxx 
+Log Message:
+Respect case sensitivity in file names.
+    *
+------------------------------------------------------------
 User: peachey  Wed Jun  6 19:43:40 PDT 2012
 evtbin/data
 
