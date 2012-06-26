@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Tue Jun 26 03:51:32 PDT 2012
+ScienceTools-scons/evtbin
+
+Modified Files:
+	evtbinLib.py 
+Log Message:
+first commit of the HEALPIX extension to gtbin
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-29-00, operation: add
 Package: evtbin
