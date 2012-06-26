@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Tue Jun 26 03:51:33 PDT 2012
+ScienceTools-scons/evtbin/pfiles
+
+Modified Files:
+	gtbin.par 
+Log Message:
+first commit of the HEALPIX extension to gtbin
+    *
+------------------------------------------------------------
+User: cohen  Tue Jun 26 03:51:33 PDT 2012
 ScienceTools-scons/evtbin/src/gtbin
 
 Modified Files:
