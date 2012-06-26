@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Tue Jun 26 03:52:10 PDT 2012
+ScienceTools-scons/evtbin/data
+
+Added Files:
+	LatHealpixTemplate 
+Log Message:
+first commit of the HEALPIX extension to gtbin
+    *
+------------------------------------------------------------
 User: cohen  Tue Jun 26 03:51:33 PDT 2012
 ScienceTools-scons/evtbin/pfiles
 
