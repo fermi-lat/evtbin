@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Thu Jun 28 08:30:15 PDT 2012
+ScienceTools-scons/evtbin/src
+
+Modified Files:
+	HealpixBinner.cxx HealpixMap.cxx 
+Log Message:
+fix the issue with EBOUNDS when no energy binning is requested. Start an entry for Healpix code in test_evtbin
+    *
+------------------------------------------------------------
+User: cohen  Thu Jun 28 08:30:15 PDT 2012
 ScienceTools-scons/evtbin/pfiles
 
 Modified Files:
