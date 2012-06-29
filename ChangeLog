@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Fri Jun 29 07:06:25 PDT 2012
+ScienceTools-scons/evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+beef up the test executable a bit for healpix
+    *
+------------------------------------------------------------
+User: cohen  Fri Jun 29 07:06:25 PDT 2012
 ScienceTools-scons/evtbin/src
 
 Modified Files:
