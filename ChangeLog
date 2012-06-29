@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Fri Jun 29 07:06:25 PDT 2012
+ScienceTools-scons/evtbin/src
+
+Modified Files:
+	HealpixMap.cxx 
+Log Message:
+beef up the test executable a bit for healpix
+    *
+------------------------------------------------------------
 User: cohen  Thu Jun 28 08:30:15 PDT 2012
 ScienceTools-scons/evtbin/src/test
 
