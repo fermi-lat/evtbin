@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Sun Jul  1 13:41:55 PDT 2012
+ScienceTools-scons/evtbin/src/test
+
+Modified Files:
+	test_evtbin.cxx 
+Log Message:
+try to fix the windows failures
+    *
+------------------------------------------------------------
+User: cohen  Sun Jul  1 13:41:55 PDT 2012
 ScienceTools-scons/evtbin/src
 
 Modified Files:
