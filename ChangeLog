@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Sun Jul  1 13:41:54 PDT 2012
+ScienceTools-scons/evtbin/evtbin
+
+Modified Files:
+	HealpixMap.h 
+Log Message:
+try to fix the windows failures
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-06-00, operation: add
 Package: evtbin
