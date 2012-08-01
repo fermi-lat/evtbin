@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Wed Aug  1 03:47:51 PDT 2012
+ScienceTools-scons/evtbin/src
+
+Modified Files:
+	HealpixBinner.cxx HealpixMap.cxx 
+Log Message:
+hopefully fix windows build
+    *
+------------------------------------------------------------
 User: cohen  Wed Aug  1 03:05:29 PDT 2012
 ScienceTools-scons/evtbin/src
 
