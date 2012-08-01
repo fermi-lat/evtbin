@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Wed Aug  1 03:05:29 PDT 2012
+ScienceTools-scons/evtbin/src
+
+Modified Files:
+	Hist3D.cxx 
+Log Message:
+fix STGEN-131 bug
+    *
+------------------------------------------------------------
 TAG
 Tag name: evtbin-02-06-01, operation: add
 Package: evtbin
