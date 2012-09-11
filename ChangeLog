@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Tue Sep 11 14:33:11 PDT 2012
+ScienceTools-scons/evtbin/src/gtbin
+
+Modified Files:
+	gtbin.cxx 
+Log Message:
+fix a bug when the ebinalg is LIN rather than LOG; fix an incorrect comment in the code
+    *
+------------------------------------------------------------
+User: cohen  Tue Sep 11 14:33:11 PDT 2012
 ScienceTools-scons/evtbin/src
 
 Modified Files:
