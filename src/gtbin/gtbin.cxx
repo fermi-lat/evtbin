@@ -52,7 +52,7 @@
 #include "tip/Table.h"
 
 // Identify cvs version tag.
-const std::string s_cvs_id("$Name: ScienceTools-09-30-01 $");
+const std::string s_cvs_id("$Name:  $");
 
 /** \class EvtBinAppBase
     \brief Base class for specific binning applications. This has a generic run() method which is valid for
@@ -129,10 +129,6 @@ class EvtBinAppBase : public st_app::StApp {
       for (std::string::iterator itor = real_sc_file.begin(); itor != real_sc_file.end(); ++itor) *itor = tolower(*itor);
       // Replace "none" with blank, and otherwise use original file name (preserving case sensitivity).
       if (real_sc_file == "none") real_sc_file = ""; else real_sc_file = sc_file;
-
-      // Check whether the data being handled requires a spacecraft file.
-      if (m_bin_config->requireScFile() && real_sc_file.empty())
-        throw std::runtime_error("getScFileName: spacecraft file name \"" + sc_file + "\" is invalid");
 
       return real_sc_file;
     }
@@ -364,6 +360,13 @@ class SingleSpectrumApp : public EvtBinAppBase {
 
       // Call energy binner to prompt for energy binning related parameters.
       m_bin_config->energyParPrompt(pars);
+
+      // Check to make sure Spacecraft file is included if user is doing LAT analysis
+      std::string real_sc_file = getScFileName(pars["scfile"]);
+        if (m_bin_config->requireScFile() && real_sc_file.empty()){
+          throw std::runtime_error("Binning LAT data for spectral analysis requires a spacecraft file for an accurate exposure value");
+      }
+
     }
 
     virtual evtbin::DataProduct * createDataProduct(const st_app::AppParGroup & pars);
@@ -408,6 +411,13 @@ class MultiSpectraApp : public EvtBinAppBase {
       if(stop_test<=start_test){
       	throw std::runtime_error("TSTART must be before than TSTOP!\n");
       }
+
+      // Check to make sure Spacecraft file is included if user is doing LAT analysis
+      std::string real_sc_file = getScFileName(pars["scfile"]);
+        if (m_bin_config->requireScFile() && real_sc_file.empty()){
+          throw std::runtime_error("Binning LAT data for spectral analysis requires a spacecraft file for an accurate exposure value");
+      }
+
     }
 
     virtual evtbin::DataProduct * createDataProduct(const st_app::AppParGroup & pars) {
