@@ -1,9 +1,9 @@
 package evtbin
 
-version v2r6p4
+version v2r6p5
 
 author James Peachey <James.Peachey-1@nasa.gov>
-# $Id: requirements,v 1.20 2012/09/12 08:08:28 cohen Exp $
+# $Id: requirements,v 1.21 2013/07/15 19:04:28 asercion Exp $
 
 use STpolicy *
 use astro *
