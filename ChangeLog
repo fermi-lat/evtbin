@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Tue Mar  4 13:33:47 PST 2014
+evtbin/src
+
+Modified Files:
+	HealpixMap.cxx 
+Log Message:
+change SKYMAPS into SKYMAP to conform to other tools
+    *
+------------------------------------------------------------
+User: cohen  Tue Mar  4 13:33:47 PST 2014
 evtbin/evtbin
 
 Modified Files:
