@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Tue Mar  4 13:33:47 PST 2014
+evtbin/data
+
+Modified Files:
+	LatHealpixTemplate 
+Log Message:
+change SKYMAPS into SKYMAP to conform to other tools
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-32-05, operation: add
 Package: evtbin
