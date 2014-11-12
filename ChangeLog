@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: asercion  Wed Nov 12 10:06:27 PST 2014
+evtbin/src
+
+Modified Files:
+	HealpixMap.cxx 
+Log Message:
+Mavericks compatibility update
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-09-34-03, operation: add
 Package: evtbin
