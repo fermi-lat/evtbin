@@ -2,6 +2,17 @@
 TAG
 Tag name: ScienceTools-10-00-00, operation: add
 Package: evtbin
+User: jchiang  Fri Feb 13 17:07:44 2015
+Files:
+  evtbin/src/gtbin/gtbin.cxx  1.21
+  evtbin/src/gtbindef/gtbindef.cxx  1.3
+  evtbin/src/test/test_evtbin.cxx  1.48
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: ScienceTools-10-00-00, operation: add
+Package: evtbin
 User: jchiang  Fri Feb 13 17:07:30 2015
 Files:
   evtbin/evtbinLib.py  1.3
