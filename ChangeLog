@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: asercion  Fri Feb 20 12:21:29 PST 2015
+evtbin/pfiles
+
+Modified Files:
+	test_evtbin.par 
+Log Message:
+Corrected typo leading to Axisrot: too many parameters error when used with Ape 2.8.
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-10-00-00, operation: add
 Package: evtbin
