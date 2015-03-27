@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Mar 27 13:39:05 PDT 2015
+ScienceTools-scons/evtbin
+
+Modified Files:
+	evtbinLib.py 
+Log Message:
+add dependence on HEALPix external
+    *
+------------------------------------------------------------
 User: echarles  Fri Mar 27 13:38:18 PDT 2015
 ScienceTools-scons/evtbin/src
 
