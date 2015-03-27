@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Mar 27 13:38:18 PDT 2015
+ScienceTools-scons/evtbin/src
+
+Modified Files:
+	HealpixBinner.cxx 
+Log Message:
+fix include path for healpix
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-10-00-03, operation: add
 Package: evtbin
