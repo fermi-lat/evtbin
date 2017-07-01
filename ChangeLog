@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Jun 30 17:34:11 PDT 2017
+evtbin/src
+
+Modified Files:
+	HealpixBinner.cxx 
+Log Message:
+Change keyword to define HealpixRegion to HPX_REG to match Matt's conventions
+    *
+------------------------------------------------------------
 TAG
 Tag name: ScienceTools-11-05-03, operation: add
 Package: evtbin
