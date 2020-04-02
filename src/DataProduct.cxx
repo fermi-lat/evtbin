@@ -287,7 +287,7 @@ namespace evtbin {
   }
 
   void DataProduct::harvestKeywords(const std::string & file_name, const std::string & ext_name) {
-    std::unique_ptr<const tip::Extension> ext(0);
+    std::unique_ptr<const tip::Extension> ext(nullptr);
     try {
       ext.reset(tip::IFileSvc::instance().readExtension(file_name, ext_name));
       harvestKeywords(ext->getHeader());

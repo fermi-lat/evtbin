@@ -533,7 +533,7 @@ class GtBinApp : public st_app::StApp {
       for (std::string::iterator itor = algorithm.begin(); itor != algorithm.end(); ++itor) *itor = toupper(*itor);
 
       // Based on this parameter, create the real application.
-      std::unique_ptr<st_app::StApp> app(0);
+      std::unique_ptr<st_app::StApp> app(nullptr);
 
       if (0 == algorithm.compare("CCUBE")) app.reset(new CountCubeApp("gtbin"));
       else if (0 == algorithm.compare("CMAP")) app.reset(new CountMapApp("gtbin"));
