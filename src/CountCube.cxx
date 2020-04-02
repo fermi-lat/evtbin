@@ -123,9 +123,9 @@ namespace evtbin {
     // Standard file creation from base class.
     createFile(creator, out_file, facilities::commonUtilities::joinPath(m_data_dir, "LatCountCubeTemplate"));
 
-    // Open Count map extension of output PHA1 file. Use an auto_ptr so that the table object
+    // Open Count map extension of output PHA1 file. Use an unique_ptr so that the table object
     // will for sure be deleted, even if an exception is thrown.
-    std::auto_ptr<tip::Image> output_image(tip::IFileSvc::instance().editImage(out_file, ""));
+    std::unique_ptr<tip::Image> output_image(tip::IFileSvc::instance().editImage(out_file, ""));
 
     // Get dimensions of image.
     typedef std::vector<tip::PixOrd_t> DimCont_t;

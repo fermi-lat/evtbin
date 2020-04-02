@@ -40,7 +40,7 @@ namespace {
     public:
       SpacecraftTable(const std::string & sc_file, const std::string & sc_table): m_sc_file(sc_file), m_sc_table(sc_table),
         m_first_start(0.), m_last_stop(0.), m_num_rec(0) {
-        std::auto_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(sc_file, sc_table));
+        std::unique_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(sc_file, sc_table));
 
         m_num_rec = table->getNumRecords();
 
@@ -140,7 +140,7 @@ namespace evtbin {
   void DataProduct::binInput() {
     using namespace tip;
     for (FileNameCont_t::iterator itor = m_event_file_cont.begin(); itor != m_event_file_cont.end(); ++itor) {
-      std::auto_ptr<const Table> events(IFileSvc::instance().readTable(*itor, m_event_table));
+      std::unique_ptr<const Table> events(IFileSvc::instance().readTable(*itor, m_event_table));
       binInput(events->begin(), events->end());
     }
   }
@@ -165,7 +165,7 @@ namespace evtbin {
     updateKeywords(out_file);
 
     // Look for and write some GBM specific keywords that we don't want in LAT Files
-    std::auto_ptr<tip::Extension> header(tip::IFileSvc::instance().editExtension(out_file, "Primary"));
+    std::unique_ptr<tip::Extension> header(tip::IFileSvc::instance().editExtension(out_file, "Primary"));
     KeyValuePairCont_t::iterator found;
     std::vector <std::string> searchKeys;
     std::vector <std::string>::iterator iter;
@@ -185,7 +185,7 @@ namespace evtbin {
   }
 
   void DataProduct::writeGti(const std::string & out_file) const {
-    std::auto_ptr<tip::Table> gti_table(tip::IFileSvc::instance().editTable(out_file, "GTI"));
+    std::unique_ptr<tip::Table> gti_table(tip::IFileSvc::instance().editTable(out_file, "GTI"));
 
     // Resize Gti extension to match gti data.
     gti_table->setNumRecords(m_gti.getNumIntervals());
@@ -256,9 +256,9 @@ namespace evtbin {
   }
 
   void DataProduct::writeEbounds(const std::string & out_file, const Binner * binner) const {
-    // Open EBOUNDS extension of output PHA1 file. Use an auto_ptr so that the table object
+    // Open EBOUNDS extension of output PHA1 file. Use an unique_ptr so that the table object
     // will for sure be deleted, even if an exception is thrown.
-    std::auto_ptr<tip::Table> output_table(tip::IFileSvc::instance().editTable(out_file, "EBOUNDS"));
+    std::unique_ptr<tip::Table> output_table(tip::IFileSvc::instance().editTable(out_file, "EBOUNDS"));
 
     // Resize table: number of records in output file must == the number of bins in the binner.
     output_table->setNumRecords(binner->getNumBins());
@@ -287,7 +287,7 @@ namespace evtbin {
   }
 
   void DataProduct::harvestKeywords(const std::string & file_name, const std::string & ext_name) {
-    std::auto_ptr<const tip::Extension> ext(0);
+    std::unique_ptr<const tip::Extension> ext(0);
     try {
       ext.reset(tip::IFileSvc::instance().readExtension(file_name, ext_name));
       harvestKeywords(ext->getHeader());
@@ -616,7 +616,7 @@ namespace evtbin {
     // Iterate over spacecraft files.
     for (std::vector<SpacecraftTable>::iterator table_itor = table_cont.begin(); table_itor != table_cont.end(); ++table_itor) {
 
-      std::auto_ptr<const tip::Table> table(table_itor->openTable());
+      std::unique_ptr<const tip::Table> table(table_itor->openTable());
 
       // In each spacecraft data table, start from the first entry.
       tip::Table::ConstIterator itor = table->begin();

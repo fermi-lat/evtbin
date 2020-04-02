@@ -53,7 +53,7 @@ namespace evtbin {
       // Read all extensions in input file, looking for mission and instrument names.
       for (tip::FileSummary::const_iterator itor = summary.begin(); itor != summary.end(); ++itor) {
         // Open extension.
-        std::auto_ptr<const tip::Extension> table(tip::IFileSvc::instance().readExtension(*file_itor, itor->getExtId()));
+        std::unique_ptr<const tip::Extension> table(tip::IFileSvc::instance().readExtension(*file_itor, itor->getExtId()));
   
         try {
           if (mission.empty()) table->getHeader()["TELESCOP"].get(mission);
@@ -155,7 +155,7 @@ namespace evtbin {
     try {
       par_group.Prompt(timevalue);
     }catch(const hoops::Hexception &){
-      std::auto_ptr<const tip::Extension> table(tip::IFileSvc::instance().readExtension(par_group["evfile"].Value(), "EVENTS"));
+      std::unique_ptr<const tip::Extension> table(tip::IFileSvc::instance().readExtension(par_group["evfile"].Value(), "EVENTS"));
       table->getHeader()[timevalUpper].get(headerTime);
       par_group[timevalue]=headerTime;
     }
@@ -239,7 +239,7 @@ namespace evtbin {
       for (std::string::iterator itor = bin_ext_uc.begin(); itor != bin_ext_uc.end(); ++itor) *itor = toupper(*itor);
 
       // Open the data file.
-      std::auto_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(par_group[bin_file], bin_ext));
+      std::unique_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(par_group[bin_file], bin_ext));
 
 // TODO Refactor this!
       // Temporary hack pending a complete handling of units in tip.

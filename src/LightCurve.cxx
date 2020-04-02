@@ -47,9 +47,9 @@ namespace evtbin {
     // Standard file creation from base class.
     createFile(creator, out_file, facilities::commonUtilities::joinPath(m_data_dir, "LatLightCurveTemplate"));
 
-    // Open RATE extension of output light curve file. Use an auto_ptr so that the table object
+    // Open RATE extension of output light curve file. Use an unique_ptr so that the table object
     // will for sure be deleted, even if an exception is thrown.
-    std::auto_ptr<tip::Table> output_table(tip::IFileSvc::instance().editTable(out_file, "RATE"));
+    std::unique_ptr<tip::Table> output_table(tip::IFileSvc::instance().editTable(out_file, "RATE"));
 
     // Write DSS keywords to preserve cut information.
     writeDssKeywords(output_table->getHeader());

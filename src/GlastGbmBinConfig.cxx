@@ -29,7 +29,7 @@ namespace evtbin {
     // binned data using the bin numbers to set the bin intervals.
 
     // Open ebounds extension.
-    std::auto_ptr<const tip::Table> ebounds(tip::IFileSvc::instance().readTable(par_group["evfile"], "EBOUNDS"));
+    std::unique_ptr<const tip::Table> ebounds(tip::IFileSvc::instance().readTable(par_group["evfile"], "EBOUNDS"));
 
     // Create a container of appropriate size for the intervals. 
     OrderedBinner::IntervalCont_t intervals(ebounds->getNumRecords());
@@ -50,7 +50,7 @@ namespace evtbin {
     // Ebounds are read from the ebounds extension.
 
     // Open ebounds extension.
-    std::auto_ptr<const tip::Table> ebounds(tip::IFileSvc::instance().readTable(par_group["evfile"], "EBOUNDS"));
+    std::unique_ptr<const tip::Table> ebounds(tip::IFileSvc::instance().readTable(par_group["evfile"], "EBOUNDS"));
 
     // Create the intervals. 
     OrderedBinner::IntervalCont_t intervals(ebounds->getNumRecords());
@@ -72,7 +72,7 @@ namespace evtbin {
     Gti * gti = new Gti;
 
     // Open events extension.
-    std::auto_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(par_group["evfile"], par_group["evtable"]));
+    std::unique_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(par_group["evfile"], par_group["evtable"]));
     tip::Table::ConstIterator start_itor = table->begin();
     if (table->end() != start_itor) {
       double tstart = (*start_itor)["TIME"].get();

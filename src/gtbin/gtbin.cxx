@@ -91,7 +91,7 @@ class EvtBinAppBase : public st_app::StApp {
 
       // Get data product. This is definitely overridden in subclasses to produce the correct type product
       // for the specific application.
-      std::auto_ptr<DataProduct> product(createDataProduct(pars));
+      std::unique_ptr<DataProduct> product(createDataProduct(pars));
 
       // Bin input data into product.
       product->binInput();
@@ -182,7 +182,7 @@ class CountCubeApp : public EvtBinAppBase {
       }
 
       // Create configuration-specific GTI.
-      std::auto_ptr<Gti>gti(m_bin_config->createGti(pars));
+      std::unique_ptr<Gti>gti(m_bin_config->createGti(pars));
 
       // Get the coordsys parameter and use it to determine what type coordinate system to use.
       bool use_lb = false;
@@ -194,10 +194,10 @@ class CountCubeApp : public EvtBinAppBase {
         "CountCubeApp::createDataProduct does not understand \"" + pars["coordsys"].Value() + "\" coordinates");
 
       // Get binner for energy from energy application object.
-      std::auto_ptr<Binner> energy_binner(m_bin_config->createEnergyBinner(pars));
+      std::unique_ptr<Binner> energy_binner(m_bin_config->createEnergyBinner(pars));
 
       // Get a binner for energy bounds.
-      std::auto_ptr<Binner> ebounds(m_bin_config->createEbounds(pars));
+      std::unique_ptr<Binner> ebounds(m_bin_config->createEbounds(pars));
 
       return new evtbin::CountCube(pars["evfile"], pars["evtable"], getScFileName(pars["scfile"]), pars["sctable"],
         pars["xref"], pars["yref"], pars["proj"], num_x_pix, num_y_pix, pars["binsz"], pars["axisrot"],
@@ -245,7 +245,7 @@ class CountMapApp : public EvtBinAppBase {
       }
 
       // Create configuration-specific GTI.
-      std::auto_ptr<Gti>gti(m_bin_config->createGti(pars));
+      std::unique_ptr<Gti>gti(m_bin_config->createGti(pars));
 
       // Get the coordsys parameter and use it to determine what type coordinate system to use.
       bool use_lb = false;
@@ -292,13 +292,13 @@ class HealpixMapApp : public EvtBinAppBase {
       using namespace evtbin;
 
       // Create configuration-specific GTI.
-      std::auto_ptr<Gti>gti(m_bin_config->createGti(pars));
+      std::unique_ptr<Gti>gti(m_bin_config->createGti(pars));
       
       // Get binner for energy from energy application object.
-      std::auto_ptr<Binner> energy_binner(m_bin_config->createEnergyBinner(pars));
+      std::unique_ptr<Binner> energy_binner(m_bin_config->createEnergyBinner(pars));
 
       // Get a binner for energy bounds.
-      std::auto_ptr<Binner> ebounds(m_bin_config->createEbounds(pars));
+      std::unique_ptr<Binner> ebounds(m_bin_config->createEbounds(pars));
 
      // Get the coordsys parameter and use it to determine what type coordinate system to use.
       bool use_lb = false;
@@ -345,10 +345,10 @@ class LightCurveApp : public EvtBinAppBase {
       using namespace evtbin;
 
       // Create configuration-specific time binner.
-      std::auto_ptr<Binner> binner(m_bin_config->createTimeBinner(pars));
+      std::unique_ptr<Binner> binner(m_bin_config->createTimeBinner(pars));
 
       // Create configuration-specific GTI.
-      std::auto_ptr<Gti>gti(m_bin_config->createGti(pars));
+      std::unique_ptr<Gti>gti(m_bin_config->createGti(pars));
 
       // Create data object from Binner.
       return new LightCurve(pars["evfile"], pars["evtable"], getScFileName(pars["scfile"]), pars["sctable"], *binner, *gti);
@@ -384,13 +384,13 @@ evtbin::DataProduct * SingleSpectrumApp::createDataProduct(const st_app::AppParG
   using namespace evtbin;
 
   // Create binner.
-  std::auto_ptr<Binner> binner(m_bin_config->createEnergyBinner(pars));
+  std::unique_ptr<Binner> binner(m_bin_config->createEnergyBinner(pars));
 
   // Create ebounds binner.
-  std::auto_ptr<Binner> ebounds(m_bin_config->createEbounds(pars));
+  std::unique_ptr<Binner> ebounds(m_bin_config->createEbounds(pars));
 
   // Create configuration-specific GTI.
-  std::auto_ptr<Gti>gti(m_bin_config->createGti(pars));
+  std::unique_ptr<Gti>gti(m_bin_config->createGti(pars));
 
   // Create data product.
   return new SingleSpec(pars["evfile"], pars["evtable"], getScFileName(pars["scfile"]), pars["sctable"], *binner, *ebounds, *gti);
@@ -432,16 +432,16 @@ class MultiSpectraApp : public EvtBinAppBase {
       using namespace evtbin;
 
       // Get binner for time from time bin configuration object.
-      std::auto_ptr<Binner> time_binner(m_bin_config->createTimeBinner(pars));
+      std::unique_ptr<Binner> time_binner(m_bin_config->createTimeBinner(pars));
 
       // Get binner for energy from energy application object.
-      std::auto_ptr<Binner> energy_binner(m_bin_config->createEnergyBinner(pars));
+      std::unique_ptr<Binner> energy_binner(m_bin_config->createEnergyBinner(pars));
 
       // Create ebounds binner.
-      std::auto_ptr<Binner> ebounds(m_bin_config->createEbounds(pars));
+      std::unique_ptr<Binner> ebounds(m_bin_config->createEbounds(pars));
 
       // Create configuration-specific GTI.
-      std::auto_ptr<Gti>gti(m_bin_config->createGti(pars));
+      std::unique_ptr<Gti>gti(m_bin_config->createGti(pars));
 
       // Create data product.
       return new MultiSpec(pars["evfile"], pars["evtable"], getScFileName(pars["scfile"]), pars["sctable"], *time_binner,
@@ -533,7 +533,7 @@ class GtBinApp : public st_app::StApp {
       for (std::string::iterator itor = algorithm.begin(); itor != algorithm.end(); ++itor) *itor = toupper(*itor);
 
       // Based on this parameter, create the real application.
-      std::auto_ptr<st_app::StApp> app(0);
+      std::unique_ptr<st_app::StApp> app(0);
 
       if (0 == algorithm.compare("CCUBE")) app.reset(new CountCubeApp("gtbin"));
       else if (0 == algorithm.compare("CMAP")) app.reset(new CountMapApp("gtbin"));

@@ -56,9 +56,9 @@ namespace evtbin {
     // Standard file creation from base class.
     createFile(creator, out_file, facilities::commonUtilities::joinPath(m_data_dir, "LatBinnedTemplate"));
 
-    // Open SPECTRUM extension of output PHA1 file. Use an auto_ptr so that the table object
+    // Open SPECTRUM extension of output PHA1 file. Use an unique_ptr so that the table object
     // will for sure be deleted, even if an exception is thrown.
-    std::auto_ptr<tip::Table> output_table(tip::IFileSvc::instance().editTable(out_file, "SPECTRUM"));
+    std::unique_ptr<tip::Table> output_table(tip::IFileSvc::instance().editTable(out_file, "SPECTRUM"));
 
     // Write DSS keywords to preserve cut information.
     writeDssKeywords(output_table->getHeader());

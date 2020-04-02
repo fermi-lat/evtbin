@@ -600,14 +600,14 @@ void EvtBinTest::testSingleSpectrum() {
 
   // Test creating spectrum from GBM data.
   // Start with GBM configuration.
-  std::auto_ptr<BinConfig> config(BinConfig::create(m_gbm_file));
+  std::unique_ptr<BinConfig> config(BinConfig::create(m_gbm_file));
 
   // Set parameters.
   st_app::AppParGroup & pars(getParGroup());
   pars["evfile"] = m_gbm_file;
-  std::auto_ptr<Binner> gbm_energy_binner(config->createEnergyBinner(pars));
-  std::auto_ptr<Binner> gbm_ebounds(config->createEbounds(pars));
-  std::auto_ptr<Gti> gbm_gti(config->createGti(pars));
+  std::unique_ptr<Binner> gbm_energy_binner(config->createEnergyBinner(pars));
+  std::unique_ptr<Binner> gbm_ebounds(config->createEbounds(pars));
+  std::unique_ptr<Gti> gbm_gti(config->createGti(pars));
 
   SingleSpec gbm_spectrum(m_gbm_file, "EVENTS", "", "SC_DATA", *gbm_energy_binner, *gbm_ebounds, *gbm_gti);
 
@@ -632,7 +632,7 @@ void EvtBinTest::testSingleSpectrum() {
   // Get the output data from the spectrum and compare it to the output file to make sure it's valid.
   const Hist1D & hist(gbm_spectrum.getHist1D());
 
-  std::auto_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(output_file, "SPECTRUM"));
+  std::unique_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(output_file, "SPECTRUM"));
   if (0 == table->getNumRecords()) {
     m_failed = true;
     std::cerr << "Unexpected: in testSingleSpectrum, output file " << output_file << " has 0 records." << std::endl;
@@ -761,7 +761,7 @@ void EvtBinTest::testBinConfig() {
 
     // Try to find a binner configuration. This should fail because no prototypes were loaded yet.
     try {
-      std::auto_ptr<BinConfig> config(BinConfig::create(par_group["evfile"]));
+      std::unique_ptr<BinConfig> config(BinConfig::create(par_group["evfile"]));
       m_failed = true;
       m_os.err() << "Unexpected: created a BinConfig before prototypes were loaded." << std::endl;
     } catch (const std::exception & x) {
@@ -772,7 +772,7 @@ void EvtBinTest::testBinConfig() {
     BinConfig::load();
 
     // Create a configuration object.
-    std::auto_ptr<BinConfig> config(BinConfig::create(par_group["evfile"]));
+    std::unique_ptr<BinConfig> config(BinConfig::create(par_group["evfile"]));
 
     // Test prompting for time binner parameters. Since they're all hidden, their values should just be
     // the same as the values just assigned above.
@@ -1535,7 +1535,7 @@ void EvtBinTest::testMultipleFiles() {
   // Get information about input files for verification purposes.
   std::vector<std::string>::size_type index = 0;
   for (FileSys::FileNameCont::iterator itor = input_file.begin(); itor != input_file.end(); ++itor, ++index) {
-    std::auto_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(*itor, "EVENTS"));
+    std::unique_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(*itor, "EVENTS"));
     num_rec[index] = table->getNumRecords();
     expected_num_events += num_rec[index];
   }
@@ -1590,7 +1590,7 @@ void EvtBinTest::testMultipleFiles() {
   merged.writeOutput("test_evtbin", "merged_spectrum.pha");
 
   // Read the output and confirm it has the requisite properties.
-  std::auto_ptr<const tip::Table> spec_table(tip::IFileSvc::instance().readTable("merged_spectrum.pha", "SPECTRUM"));
+  std::unique_ptr<const tip::Table> spec_table(tip::IFileSvc::instance().readTable("merged_spectrum.pha", "SPECTRUM"));
   
   double num_events = 0.;
   for (tip::Table::ConstIterator itor = spec_table->begin(); itor != spec_table->end(); ++itor) {
