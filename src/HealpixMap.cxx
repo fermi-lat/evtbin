@@ -122,7 +122,7 @@ namespace evtbin {
   //From Likelihood/CountsMap/readEbounds
   void HealpixMap::readEbounds(const std::string & healpixmap_file)
   {
-    std::auto_ptr<const tip::Table> 
+    std::unique_ptr<const tip::Table> 
       ebounds(tip::IFileSvc::instance().readTable(healpixmap_file, "EBOUNDS"));
     tip::Table::ConstIterator it = ebounds->begin();
     tip::Table::ConstRecord & row = *it;
@@ -189,7 +189,7 @@ void HealpixMap::binInput(tip::Table::ConstIterator begin, tip::Table::ConstIter
     createFile(creator, out_file, facilities::commonUtilities::joinPath(m_data_dir, "LatHealpixTemplate"));
 
     //access SKYMAP extension
-    std::auto_ptr<tip::Table> output_table(tip::IFileSvc::instance().editTable(out_file, "SKYMAP"));
+    std::unique_ptr<tip::Table> output_table(tip::IFileSvc::instance().editTable(out_file, "SKYMAP"));
     tip::Header & header(output_table->getHeader());
    
     // Write the SKYMAP  extension
@@ -201,7 +201,7 @@ void HealpixMap::binInput(tip::Table::ConstIterator begin, tip::Table::ConstIter
     // Write DSS keywords to preserve cut information.
     writeDssKeywords(header);
     //access primary header to add DSS keywords there as well
-    std::auto_ptr<tip::Image> primimage(tip::IFileSvc::instance().editImage(out_file, ""));
+    std::unique_ptr<tip::Image> primimage(tip::IFileSvc::instance().editImage(out_file, ""));
     tip::Header & primheader = primimage->getHeader();
     writeDssKeywords(primheader);
 
@@ -217,7 +217,7 @@ void HealpixMap::binInput(tip::Table::ConstIterator begin, tip::Table::ConstIter
   
   void HealpixMap::writeSkymaps(const std::string & out_file) const {
     //Open the skymap extension
-    std::auto_ptr<tip::Table> output_table(tip::IFileSvc::instance().editTable(out_file, "SKYMAP"));
+    std::unique_ptr<tip::Table> output_table(tip::IFileSvc::instance().editTable(out_file, "SKYMAP"));
     //resize the table to have as many records as there are healpixels
     output_table->setNumRecords(m_hpx_binner.getNumBins());
 

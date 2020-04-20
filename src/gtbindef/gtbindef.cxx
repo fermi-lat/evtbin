@@ -96,7 +96,7 @@ void BinMakerApp::run() {
   IFileSvc::instance().updateKeywords(out_file, keywords);
 
   // Populate output table.
-  std::auto_ptr<Table> out_table(file_svc.editTable(out_file, table_name));
+  std::unique_ptr<Table> out_table(file_svc.editTable(out_file, table_name));
 
   Table::Iterator itor = out_table->begin();
   while (fs) {
