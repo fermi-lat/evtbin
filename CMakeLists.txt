@@ -42,3 +42,17 @@ target_link_libraries(gtbindef PRIVATE evtbin)
 ###### Tests ######
 add_executable(test_evtbin src/test/test_evtbin.cxx)
 target_link_libraries(test_evtbin PRIVATE evtbin)
+
+###############################################################
+# Installation
+###############################################################
+install(DIRECTORY evtbin DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+
+install(
+  TARGETS evtbin gtbin gtbindef
+  # EXPORT fermiTargets
+  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+  LIBRARY DESTINATION lib
+  ARCHIVE DESTINATION lib
+  INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
