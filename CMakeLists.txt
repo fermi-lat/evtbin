@@ -51,7 +51,7 @@ install(DIRECTORY data/ DESTINATION ${FERMI_INSTALL_DATADIR})
 install(DIRECTORY pfiles/ DESTINATION ${FERMI_INSTALL_PFILESDIR})
 
 install(
-  TARGETS evtbin gtbin gtbindef
+  TARGETS evtbin gtbin gtbindef test_evtbin
   # EXPORT fermiTargets
   RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
   LIBRARY DESTINATION lib
