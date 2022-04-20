@@ -46,7 +46,9 @@ target_link_libraries(test_evtbin PRIVATE evtbin)
 ###############################################################
 # Installation
 ###############################################################
-install(DIRECTORY evtbin DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(DIRECTORY evtbin DESTINATION ${FERMI_INSTALL_INCLUDEDIR})
+install(DIRECTORY data/ DESTINATION ${FERMI_INSTALL_DATADIR})
+install(DIRECTORY pfiles/ DESTINATION ${FERMI_INSTALL_PFILESDIR})
 
 install(
   TARGETS evtbin gtbin gtbindef
