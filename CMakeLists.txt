@@ -47,7 +47,7 @@ target_link_libraries(test_evtbin PRIVATE evtbin)
 # Installation
 ###############################################################
 install(DIRECTORY evtbin DESTINATION ${FERMI_INSTALL_INCLUDEDIR})
-install(DIRECTORY data/ DESTINATION ${FERMI_INSTALL_DATADIR})
+install(DIRECTORY data/ DESTINATION ${FERMI_INSTALL_REFDATADIR}/evtbin)
 install(DIRECTORY pfiles/ DESTINATION ${FERMI_INSTALL_PFILESDIR})
 
 install(
