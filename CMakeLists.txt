@@ -1,6 +1,6 @@
 ##### Library ######
 add_library(
-  evtbin STATIC
+  evtbin 
   src/BayesianBinner.cxx
   src/BinConfig.cxx
   src/ConstSnBinner.cxx
