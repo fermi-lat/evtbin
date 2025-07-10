@@ -37,6 +37,8 @@ target_include_directories(
 )
 
 ###### Executables ######
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
 add_executable(gtbin src/gtbin/gtbin.cxx)
 add_executable(gtbindef src/gtbindef/gtbindef.cxx)
 target_link_libraries(gtbin PRIVATE evtbin)
