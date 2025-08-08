@@ -66,7 +66,7 @@ TIMEZERO =                   0. / clock correction
 TIMESYS  =                  MJD / Time system used to define time
 TIMEREF  =                LOCAL / reference frame used for times
 CLOCKAPP=                    F  / was a clock drift correction applied
-GPS_OUT =                    F / whether GPS time was unavailable at any time
+GPS_OUT =                    F  / whether GPS time was unavailable at any time
 CREATOR  =                      / Software and version creating file
 HISTORY                   LatCountMapTemplate,v 1.4 2007/05/03 elwinter Exp 
 
@@ -110,7 +110,7 @@ TIMEZERO =                   0. / clock correction
 TIMESYS  =                  MJD / Time system used to define time
 TIMEREF  =                LOCAL / reference frame used for times
 CLOCKAPP=                    F  / was a clock drift correction applied
-GPS_OUT =                    F / whether GPS time was unavailable at any time
+GPS_OUT =                    F  / whether GPS time was unavailable at any time
 NDSKEYS =                     0 / Number of data subspace keywords in header
 CREATOR  =                      / Software and version creating file
 HISTORY                   LatCountMapTemplate,v 1.3 2005/04/05 21:06:39 peachey Exp 

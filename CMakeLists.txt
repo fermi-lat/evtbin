@@ -25,7 +25,7 @@ add_library(
   src/SingleSpec.cxx
 )
 
-target_link_libraries(evtbin PUBLIC astro healpix st_app st_stream tip st_facilities)
+target_link_libraries(evtbin PUBLIC astro healpix st_app st_stream tip st_facilities general_util)
 
 target_include_directories(
   evtbin PUBLIC

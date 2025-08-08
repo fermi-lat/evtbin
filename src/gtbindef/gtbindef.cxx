@@ -15,6 +15,7 @@
 #include "tip/IFileSvc.h"
 #include "tip/Table.h"
 #include "tip/Header.h"
+#include "general_util/generic_utils.h"
 
 // Identify cvs version tag.
 const std::string s_cvs_id("$Name:  $");
@@ -86,7 +87,10 @@ void BinMakerApp::run() {
   struct tm * loc_time = std::localtime(&now);
   std::strftime(string_time, sizeof(string_time), "%Y-%m-%dT%H:%M:%S", loc_time);
   Header::KeyValCont_t keywords;
-  keywords.push_back(Header::KeyValPair_t("CREATOR", "gtbindef"));
+  
+  // Update CREATOR value with: Tool name/Group/Version
+  std::string creator_version =  GenericUtils::creator_banner("gtbindef");
+  keywords.push_back(Header::KeyValPair_t("CREATOR", creator_version));
   keywords.push_back(Header::KeyValPair_t("FILENAME", facilities::Util::basename(out_file)));
   keywords.push_back(Header::KeyValPair_t("DATE", string_time));
   keywords.push_back(Header::KeyValPair_t("DATE-OBS", string_time));

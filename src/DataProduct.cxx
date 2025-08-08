@@ -32,6 +32,7 @@
 #include "tip/KeyRecord.h"
 #include "tip/Table.h"
 #include "facilities/commonUtilities.h"
+#include "general_util/generic_utils.h"
 
 namespace {
 
@@ -156,10 +157,12 @@ namespace evtbin {
     tip::IFileSvc::instance().createFile(out_file, fits_template);
 
     // Add CREATOR keyword to the hash of keywords.
-    updateKeyValue("CREATOR", creator, "Software and version creating file");
+    // Update CREATOR value with: Tool name/Group/Version
+    std::string creator_version =  GenericUtils::creator_banner(creator);
+    updateKeyValue("CREATOR", creator_version, "Software and version creating file");
 
     // Store CREATOR information for use in history keywords.
-    m_creator = creator;
+    m_creator = creator_version;
 
     // Update newly created file with keywords which were harvested from input data.
     updateKeywords(out_file);
