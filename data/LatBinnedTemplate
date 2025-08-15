@@ -15,7 +15,7 @@ TIMEREF  =                LOCAL / reference frame used for times
 CLOCKAPP=                    F  / was a clock drift correction applied
 GPS_OUT =                    F  / whether GPS time was unavailable at any time
 OBSERVER = 'Michelson'          / PI name
-CREATOR  =                      / Software and version creating file
+CREATOR  = 'APP_NAME Fermitools 2.4.1' / Software and version creating file
 HISTORY                     LatBinnedTemplate,v 1.7 2005/08/02 14:14:06 peachey Exp
 END
 
@@ -65,7 +65,7 @@ TIMEREF  =                LOCAL / reference frame used for times
 CLOCKAPP=                    F  / was a clock drift correction applied
 GPS_OUT =                    F / whether GPS time was unavailable at any time
 NDSKEYS =                     0 / Number of data subspace keywords in header
-CREATOR  =                      / Software and version creating file
+CREATOR  = 'APP_NAME Fermitools 2.4.1' / Software and version creating file
 HISTORY                   LatBinnedTemplate,v 1.7 2005/08/02 14:14:06 peachey Exp 
 
 
@@ -154,7 +154,7 @@ TIMESYS  =                  MJD / Time system used to define time
 TIMEREF  =                LOCAL / reference frame used for times
 CLOCKAPP=                    F  / was a clock drift correction applied
 GPS_OUT =                    F / whether GPS time was unavailable at any time
-CREATOR  =                      / Software and version creating file
+CREATOR  = 'APP_NAME Fermitools 2.4.1' / Software and version creating file
 HISTORY                   LatBinnedTemplate,v 1.7 2005/08/02 14:14:06 peachey Exp 
 
 
@@ -199,7 +199,7 @@ TIMESYS  =                  MJD / Time system used to define time
 TIMEREF  =                LOCAL / reference frame used for times
 CLOCKAPP=                    F  / was a clock drift correction applied
 GPS_OUT =                    F / whether GPS time was unavailable at any time
-CREATOR  =                      / Software and version creating file
+CREATOR  = 'APP_NAME Fermitools 2.4.1' / Software and version creating file
 HISTORY                   LatBinnedTemplate,v 1.7 2005/08/02 14:14:06 peachey Exp 
 
 

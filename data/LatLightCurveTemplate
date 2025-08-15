@@ -15,7 +15,7 @@ TIMEREF  =                LOCAL / reference frame used for times
 CLOCKAPP=                    F  / was a clock drift correction applied
 GPS_OUT =                    F  / whether GPS time was unavailable at any time
 OBSERVER = 'Michelson'          / PI name
-CREATOR  =                      / Software and version creating file
+CREATOR  = 'APP_NAME Fermitools 2.4.1' / Software and version creating file
 HISTORY                   LatLightCurveTemplate,v 1.4 2005/04/05 21:06:39 peachey Exp 
 END
 
@@ -55,7 +55,7 @@ MJDREFF  =                      / Fractional part of MJD
 TSTART   =                      / Start time of the light curve
 TSTOP    =                      / Stop time of the light curve
 NDSKEYS  =                    0 / Number of data subspace keywords in header
-CREATOR  =                      / Software and version creating file
+CREATOR  = 'APP_NAME Fermitools 2.4.1' / Software and version creating file
 HISTORY                   LatLightCurveTemplate,v 1.4 2005/04/05 21:06:39 peachey Exp 
 
 # Column description
@@ -103,7 +103,7 @@ TIMESYS  =                  MJD / Time system used to define time
 TIMEREF  =                LOCAL / reference frame used for times
 CLOCKAPP=                    F  / was a clock drift correction applied
 GPS_OUT =                    F  / whether GPS time was unavailable at any time
-CREATOR  =                      / Software and version creating file
+CREATOR  = 'APP_NAME Fermitools 2.4.1' / Software and version creating file
 HISTORY                   LatLightCurveTemplate,v 1.4 2005/04/05 21:06:39 peachey Exp 
 
 

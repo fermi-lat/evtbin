@@ -9,7 +9,7 @@ INSTRUME =                  LAT / Name of instrument generating data
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
 OBSERVER = 'Michelson'          / PI name
-CREATOR  =                      / Software and version creating file
+CREATOR  = 'APP_NAME Fermitools 2.4.1' / Software and version creating file
 HISTORY                     LatEnergyBinDef.tpl,v 1.2 2005/04/05 21:06:39 peachey Exp
 END
 
@@ -34,7 +34,7 @@ HDUCLAS2 =              EBOUNDS / Extension contains response matrix
 HDUVERS  =                1.2.0 / Version number of the format
 DATE-OBS                        / Start Date and Time of the observation (UTC)
 DATE-END                        / End Date and Time of the observation (UTC)
-CREATOR  =                      / Software and version creating file
+CREATOR  = 'APP_NAME Fermitools 2.4.1' / Software and version creating file
 HISTORY                   LatEnergyBinDef.tpl,v 1.2 2005/04/05 21:06:39 peachey Exp
 
 
