@@ -25,7 +25,10 @@ add_library(
   src/SingleSpec.cxx
 )
 
-target_link_libraries(evtbin PUBLIC astro healpix st_app st_stream tip st_facilities)
+target_link_libraries(evtbin
+PUBLIC astro healpix st_app st_stream tip st_facilities
+PRIVATE CLHEP::RandomS
+)
 
 target_include_directories(
   evtbin PUBLIC
@@ -34,6 +37,8 @@ target_include_directories(
 )
 
 ###### Executables ######
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
 add_executable(gtbin src/gtbin/gtbin.cxx)
 add_executable(gtbindef src/gtbindef/gtbindef.cxx)
 target_link_libraries(gtbin PRIVATE evtbin)
