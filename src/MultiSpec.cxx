@@ -110,7 +110,7 @@ namespace evtbin {
       (*table_itor)["CHANNEL"].set(channel, channel + num_energy_bins, 0);
 
       // Number of counts in each bin, from the histogram.
-      (*table_itor)["COUNTS"].set(&(m_hist[index][0]), &(m_hist[index][num_energy_bins]), 0);
+      (*table_itor)["COUNTS"].set(m_hist[index].data(), m_hist[index].data() + num_energy_bins, 0);
             
       // Keep a running total of binned counts for current spectrum.
       for (long index2 = 0; index2 != num_energy_bins; ++index2) {
