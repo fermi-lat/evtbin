@@ -86,7 +86,7 @@ void BinMakerApp::run() {
   struct tm * loc_time = std::localtime(&now);
   std::strftime(string_time, sizeof(string_time), "%Y-%m-%dT%H:%M:%S", loc_time);
   Header::KeyValCont_t keywords;
-  keywords.push_back(Header::KeyValPair_t("CREATOR", "gtbindef"));
+  keywords.push_back(Header::KeyValPair_t("CREATOR", "gtbindef " + getVersion()));
   keywords.push_back(Header::KeyValPair_t("FILENAME", facilities::Util::basename(out_file)));
   keywords.push_back(Header::KeyValPair_t("DATE", string_time));
   keywords.push_back(Header::KeyValPair_t("DATE-OBS", string_time));
