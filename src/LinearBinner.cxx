@@ -15,14 +15,14 @@ namespace evtbin {
     m_bin_size(bin_size),
     m_num_bins(long(ceil((interval_end - interval_begin)/bin_size))) {}
 
-  long LinearBinner::computeIndex(double value) const {
+  auto LinearBinner::computeIndex(double value) const -> long {
     if (value < m_interval_begin || value >= m_interval_end) return -1;
     return long((value - m_interval_begin) / m_bin_size);
   }
 
-  long LinearBinner::getNumBins() const { return m_num_bins; }
+  auto LinearBinner::getNumBins() const -> long { return m_num_bins; }
 
-  Binner::Interval LinearBinner::getInterval(long index) const {
+  auto LinearBinner::getInterval(long index) const -> Binner::Interval {
     // Check bounds, and handle endpoints explicitly to avoid any round-off:
     if (index < 0 || index >= m_num_bins)
       return Binner::Interval(0., 0.);
@@ -37,6 +37,6 @@ namespace evtbin {
     );
   }
 
-  Binner * LinearBinner::clone() const { return new LinearBinner(*this); }
+  auto LinearBinner::clone() const -> Binner * { return new LinearBinner(*this); }
 
 }

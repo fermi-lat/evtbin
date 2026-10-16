@@ -97,7 +97,7 @@ namespace evtbin {
   }
   
    
-  long HealpixBinner::computeIndex(double coord1, double coord2) const 
+  auto HealpixBinner::computeIndex(double coord1, double coord2) const -> long 
   {
     // HEALPix expects theta and phi in degrees
     double phi = astro::degToRad(coord1);
@@ -115,7 +115,7 @@ namespace evtbin {
   } //end of compute index
   
   /////////////////////////////////////////////////////////////////////////1D-Binner
-  long HealpixBinner::computeIndex(double value) const {
+  auto HealpixBinner::computeIndex(double value) const -> long {
     if ( allSky() ) {
       if (value < 0 || value > m_hpx.Npix() ) return -1;
       return long(value);
@@ -129,15 +129,15 @@ namespace evtbin {
   }
   ////////////////////////////////////////////////////////////////////////////
   
-  long HealpixBinner::getNumBins() const { 
+  auto HealpixBinner::getNumBins() const -> long { 
     return allSky() ? m_hpx.Npix() : m_pixelIndices.size();
   }
   
-  Binner::Interval HealpixBinner::getInterval(long index) const {
+  auto HealpixBinner::getInterval(long index) const -> Binner::Interval {
     return Binner::Interval(0., 0.);
   }
   
-  Binner * HealpixBinner::clone() const { return new HealpixBinner(*this); } 
+  auto HealpixBinner::clone() const -> Binner * { return new HealpixBinner(*this); } 
   
   HealpixBinner::~HealpixBinner() throw(){
     delete m_region;

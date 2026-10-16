@@ -114,10 +114,10 @@ class EvtBinAppBase : public st_app::StApp {
     /** \brief Create a specific data product object using the given parameters.
         \param pars The parameter prompting object.
     */
-    virtual evtbin::DataProduct * createDataProduct(const st_app::AppParGroup & pars) = 0;
+    virtual auto createDataProduct(const st_app::AppParGroup & pars) -> evtbin::DataProduct * = 0;
 
   protected:
-    std::string getScFileName(const std::string & sc_file) const {
+    auto getScFileName(const std::string & sc_file) const -> std::string {
       // Find end of trailing whitespace.
       std::string::const_iterator end = sc_file.end();
       for (std::string::const_iterator itor = end; itor != sc_file.begin() && isspace(*(itor-1)); --itor) {}
@@ -157,7 +157,7 @@ class CountCubeApp : public EvtBinAppBase {
       m_bin_config->energyParPrompt(pars);
     }
 
-    virtual evtbin::DataProduct * createDataProduct(const st_app::AppParGroup & pars) {
+    virtual auto createDataProduct(const st_app::AppParGroup & pars) -> evtbin::DataProduct * {
       using namespace evtbin;
 
       unsigned long num_x_pix = 0;
@@ -220,7 +220,7 @@ class CountMapApp : public EvtBinAppBase {
       m_bin_config->spatialParPrompt(pars);
     }
 
-    virtual evtbin::DataProduct * createDataProduct(const st_app::AppParGroup & pars) {
+    virtual auto createDataProduct(const st_app::AppParGroup & pars) -> evtbin::DataProduct * {
       using namespace evtbin;
 
       unsigned long num_x_pix = 0;
@@ -288,7 +288,7 @@ class HealpixMapApp : public EvtBinAppBase {
       }
     }
 
-    virtual evtbin::DataProduct * createDataProduct(const st_app::AppParGroup & pars) {
+    virtual auto createDataProduct(const st_app::AppParGroup & pars) -> evtbin::DataProduct * {
       using namespace evtbin;
 
       // Create configuration-specific GTI.
@@ -341,7 +341,7 @@ class LightCurveApp : public EvtBinAppBase {
       }
     }
 
-    virtual evtbin::DataProduct * createDataProduct(const st_app::AppParGroup & pars) {
+    virtual auto createDataProduct(const st_app::AppParGroup & pars) -> evtbin::DataProduct * {
       using namespace evtbin;
 
       // Create configuration-specific time binner.
@@ -377,10 +377,10 @@ class SingleSpectrumApp : public EvtBinAppBase {
 
     }
 
-    virtual evtbin::DataProduct * createDataProduct(const st_app::AppParGroup & pars);
+    virtual auto createDataProduct(const st_app::AppParGroup & pars) -> evtbin::DataProduct *;
 };
 
-evtbin::DataProduct * SingleSpectrumApp::createDataProduct(const st_app::AppParGroup & pars) {
+auto SingleSpectrumApp::createDataProduct(const st_app::AppParGroup & pars) -> evtbin::DataProduct * {
   using namespace evtbin;
 
   // Create binner.
@@ -428,7 +428,7 @@ class MultiSpectraApp : public EvtBinAppBase {
 
     }
 
-    virtual evtbin::DataProduct * createDataProduct(const st_app::AppParGroup & pars) {
+    virtual auto createDataProduct(const st_app::AppParGroup & pars) -> evtbin::DataProduct * {
       using namespace evtbin;
 
       // Get binner for time from time bin configuration object.

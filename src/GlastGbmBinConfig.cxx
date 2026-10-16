@@ -15,7 +15,7 @@ namespace evtbin {
     s_config_cont.insert(std::make_pair("FERMI::GBM", &s_prototype));
   }
 
-  GlastGbmBinConfig * GlastGbmBinConfig::clone() const {
+  auto GlastGbmBinConfig::clone() const -> GlastGbmBinConfig * {
     return new GlastGbmBinConfig(*this);
   }
 
@@ -24,7 +24,7 @@ namespace evtbin {
     // in channel space.
   }
   
-  Binner * GlastGbmBinConfig::createEnergyBinner(const st_app::AppParGroup & par_group) const {
+  auto GlastGbmBinConfig::createEnergyBinner(const st_app::AppParGroup & par_group) const -> Binner * {
     // Binning GBM data in energy is really making a histogram of the already
     // binned data using the bin numbers to set the bin intervals.
 
@@ -46,7 +46,7 @@ namespace evtbin {
     return new OrderedBinner(intervals, "PHA");
   }
   
-  Binner * GlastGbmBinConfig::createEbounds(const st_app::AppParGroup & par_group) const {
+  auto GlastGbmBinConfig::createEbounds(const st_app::AppParGroup & par_group) const -> Binner * {
     // Ebounds are read from the ebounds extension.
 
     // Open ebounds extension.
@@ -68,7 +68,7 @@ namespace evtbin {
 
   }
 
-  Gti * GlastGbmBinConfig::createGti(const st_app::AppParGroup & par_group) const {
+  auto GlastGbmBinConfig::createGti(const st_app::AppParGroup & par_group) const -> Gti * {
     Gti * gti = new Gti;
 
     // Open events extension.

@@ -59,13 +59,13 @@ namespace {
 
       operator tip::Index_t() const { return getNumRecords(); }
 
-      tip::Index_t getNumRecords() const { return m_num_rec; }
+      auto getNumRecords() const -> tip::Index_t { return m_num_rec; }
 
-      bool operator <(const SpacecraftTable & table) const {
+      auto operator <(const SpacecraftTable & table) const -> bool {
         return m_first_start != table.m_first_start ? (m_first_start < table.m_first_start) : (m_last_stop < table.m_last_stop);
       }
 
-      bool connectsTo(const SpacecraftTable & table) const {
+      auto connectsTo(const SpacecraftTable & table) const -> bool {
         bool is_equal = m_last_stop == table.m_first_start;
         if (!is_equal) {
           double ratio = 1.;
@@ -77,9 +77,9 @@ namespace {
         return is_equal;
       }
 
-      const std::string & getFileName() const { return m_sc_file; }
+      auto getFileName() const -> const std::string & { return m_sc_file; }
 
-      const tip::Table * openTable() const { return tip::IFileSvc::instance().readTable(m_sc_file, m_sc_table); }
+      auto openTable() const -> const tip::Table * { return tip::IFileSvc::instance().readTable(m_sc_file, m_sc_table); }
 
     private:
       std::string m_sc_file;
@@ -214,21 +214,21 @@ namespace evtbin {
     }
   }
 
-  const Gti & DataProduct::getGti() const { return m_gti; }
+  auto DataProduct::getGti() const -> const Gti & { return m_gti; }
 
-  const Hist1D & DataProduct::getHist1D() const {
+  auto DataProduct::getHist1D() const -> const Hist1D & {
     const Hist1D * hist = dynamic_cast<const Hist1D *>(m_hist_ptr);
     if (0 == hist) throw std::logic_error("DataProduct::getHist1D: not a 1 dimensional histogram");
     return *hist;
   }
 
-  const Hist2D & DataProduct::getHist2D() const {
+  auto DataProduct::getHist2D() const -> const Hist2D & {
     const Hist2D * hist = dynamic_cast<const Hist2D *>(m_hist_ptr);
     if (0 == hist) throw std::logic_error("DataProduct::getHist2D: not a 2 dimensional histogram");
     return *hist;
   }
 
-  bool DataProduct::adjustGti(const Binner * binner) {
+  auto DataProduct::adjustGti(const Binner * binner) -> bool {
     // Get number of bins.
     long num_bins = binner->getNumBins();
 
@@ -554,7 +554,7 @@ namespace evtbin {
     }
   }
 
-  double DataProduct::computeExposure(const std::string & sc_file, const std::string & sc_table) const {
+  auto DataProduct::computeExposure(const std::string & sc_file, const std::string & sc_table) const -> double {
     m_os.setMethod("computeExposure(const std::string &...)");
     using namespace st_facilities;
 
@@ -656,7 +656,7 @@ namespace evtbin {
     return exposure;
   }
 
-  std::string DataProduct::formatDateKeyword(const time_t & time) const {
+  auto DataProduct::formatDateKeyword(const time_t & time) const -> std::string {
     // Standard date format defined by FITS standard.
     char string_time[] = "YYYY-MM-DDThh:mm:ss";
 
@@ -668,7 +668,7 @@ namespace evtbin {
     return string_time;
   }
 
-  double DataProduct::calcStatErr(double counts) const {
+  auto DataProduct::calcStatErr(double counts) const -> double {
     // Same initial values as the FITS Header template has.
     double stat_err = 0.0;
     // Cutoff below which we apply fudge factor.  Sort of arbitrary.

@@ -24,7 +24,7 @@ namespace evtbin {
 
   BayesianBinner::~BayesianBinner() throw() {}
 
-  Binner * BayesianBinner::clone() const { return new BayesianBinner(*this); }
+  auto BayesianBinner::clone() const -> Binner * { return new BayesianBinner(*this); }
 
   void BayesianBinner::computeBlocks(const IntervalCont_t & intervals) {
     // Check inputs for validity.

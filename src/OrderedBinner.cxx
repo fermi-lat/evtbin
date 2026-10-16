@@ -35,7 +35,7 @@ namespace evtbin {
 
   OrderedBinner::~OrderedBinner() throw() {}
 
-  long OrderedBinner::computeIndex(double value) const {
+  auto OrderedBinner::computeIndex(double value) const -> long {
     // Find the first bin for which the value is < that bin's beginning value.
     IntervalCont_t::const_iterator bound = std::upper_bound(m_intervals.begin(), m_intervals.end(), value);
 
@@ -51,9 +51,9 @@ namespace evtbin {
     return -1;
   }
 
-  long OrderedBinner::getNumBins() const { return m_intervals.size(); }
+  auto OrderedBinner::getNumBins() const -> long { return m_intervals.size(); }
 
-  Binner::Interval OrderedBinner::getInterval(long index) const {
+  auto OrderedBinner::getInterval(long index) const -> Binner::Interval {
     // Check bounds, and handle endpoints explicitly to avoid any round-off:
     if (index < 0 || (unsigned long)(index) >= m_intervals.size())
       return Binner::Interval(0., 0.);
@@ -61,6 +61,6 @@ namespace evtbin {
     return m_intervals[index];
   }
 
-  Binner * OrderedBinner::clone() const { return new OrderedBinner(*this); }
+  auto OrderedBinner::clone() const -> Binner * { return new OrderedBinner(*this); }
 
 }

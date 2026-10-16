@@ -14,14 +14,14 @@ namespace evtbin {
     m_interval_end(interval_end),
     m_num_bins(num_bins) {}
 
-  long LogBinner::computeIndex(double value) const {
+  auto LogBinner::computeIndex(double value) const -> long {
     if (value < m_interval_begin || value >= m_interval_end) return -1;
     return long(m_num_bins * log(double(value) / m_interval_begin) / log(double(m_interval_end) / m_interval_begin));
   }
 
-  long LogBinner::getNumBins() const { return m_num_bins; }
+  auto LogBinner::getNumBins() const -> long { return m_num_bins; }
 
-  Binner::Interval LogBinner::getInterval(long index) const {
+  auto LogBinner::getInterval(long index) const -> Binner::Interval {
     // Check bounds, and handle endpoints explicitly to avoid any round-off:
     if (index < 0 || index >= m_num_bins)
       return Binner::Interval(0., 0.);
@@ -38,6 +38,6 @@ namespace evtbin {
     );
   }
 
-  Binner * LogBinner::clone() const { return new LogBinner(*this); }
+  auto LogBinner::clone() const -> Binner * { return new LogBinner(*this); }
 
 }

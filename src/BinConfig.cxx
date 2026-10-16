@@ -39,7 +39,7 @@ namespace evtbin {
     GlastLatBinConfig::load();
   }
 
-  BinConfig * BinConfig::create(const std::string & ev_file_name) {
+  auto BinConfig::create(const std::string & ev_file_name) -> BinConfig * {
     using namespace st_facilities;
     FileSys::FileNameCont file_name_cont = FileSys::expandFileList(ev_file_name);
     BinConfig * config = 0;
@@ -127,22 +127,22 @@ namespace evtbin {
       "lcemin", "lcemax");
   }
 
-  Binner * BinConfig::createEnergyBinner(const st_app::AppParGroup & par_group) const {
+  auto BinConfig::createEnergyBinner(const st_app::AppParGroup & par_group) const -> Binner * {
     return createBinner(par_group, "ebinalg", "efield", "emin", "emax", "denergy", "enumbins", "ebinfile",
       "ENERGYBINS", "E_MIN", "E_MAX");
   }
 
-  Binner * BinConfig::createTimeBinner(const st_app::AppParGroup & par_group) const {
+  auto BinConfig::createTimeBinner(const st_app::AppParGroup & par_group) const -> Binner * {
     return createBinner(par_group, "tbinalg", "tfield", "tstart", "tstop", "dtime", "ntimebins", "tbinfile",
       "TIMEBINS", "START", "STOP", "snratio", "lcemin", "lcemax");
   }
 
-  Binner * BinConfig::createEbounds(const st_app::AppParGroup & par_group) const {
+  auto BinConfig::createEbounds(const st_app::AppParGroup & par_group) const -> Binner * {
     return createBinner(par_group, "ebinalg", "efield", "emin", "emax", "denergy", "enumbins", "ebinfile",
       "ENERGYBINS", "E_MIN", "E_MAX");
   }
 
-  Gti * BinConfig::createGti(const st_app::AppParGroup & par_group) const {
+  auto BinConfig::createGti(const st_app::AppParGroup & par_group) const -> Gti * {
     return new Gti(par_group["evfile"]);
   }
 
@@ -211,10 +211,10 @@ namespace evtbin {
     } else throw std::runtime_error(std::string("Unknown binning algorithm ") + par_group[alg].Value());
   }
 
-  Binner * BinConfig::createBinner(const st_app::AppParGroup & par_group, const std::string & alg,
+  auto BinConfig::createBinner(const st_app::AppParGroup & par_group, const std::string & alg,
     const std::string & in_field, const std::string & bin_begin, const std::string & bin_end, const std::string & bin_size,
     const std::string & num_bins, const std::string & bin_file, const std::string & bin_ext, const std::string & start_field,
-    const std::string & stop_field, const std::string & sn_ratio, const std::string & lc_emin, const std::string & lc_emax) const {
+    const std::string & stop_field, const std::string & sn_ratio, const std::string & lc_emin, const std::string & lc_emax) const -> Binner * {
     using namespace evtbin;
 
     Binner * binner = 0;

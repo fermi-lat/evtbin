@@ -11,6 +11,6 @@ namespace evtbin {
       delete *itor;
   }
 
-  const Hist::BinnerCont_t & Hist::getBinners() const { return m_binners; }
+  auto Hist::getBinners() const -> const Hist::BinnerCont_t & { return m_binners; }
 
 }
