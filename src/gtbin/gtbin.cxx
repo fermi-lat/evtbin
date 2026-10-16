@@ -63,7 +63,7 @@ class EvtBinAppBase : public st_app::StApp {
     /** \brief Construct a binning application with the given name.
         \param app_name the name of the application.
     */
-    EvtBinAppBase(const std::string & app_name): m_bin_config(0), m_app_name(app_name) {}
+    EvtBinAppBase(const std::string & app_name): m_bin_config(0), m_app_name(app_name) { setVersion(s_cvs_id); }
 
     virtual ~EvtBinAppBase() throw() { delete m_bin_config; }
 
@@ -97,7 +97,7 @@ class EvtBinAppBase : public st_app::StApp {
       product->binInput();
 
       // Write the data product output.
-      product->writeOutput(m_app_name, pars["outfile"]);
+      product->writeOutput(m_app_name + " " + getVersion(), pars["outfile"]);
     }
 
     /** \brief Prompt for all parameters needed by a particular binner. The base class version prompts
