@@ -242,9 +242,11 @@ None directly. `Gti` is exposed through `pyExposure`'s SWIG interface, and
   - `data/outref/` goes to `${FERMI_INSTALL_DATADIR}/evtbin/outref`
 - **Runtime data lookup:** `gtbin` and `gtbindef` find their FITS templates
   through `facilities::commonUtilities::getDataPath("evtbin")`, which
-  resolves to `$FERMI_INST_DIR/refdata/fermi/evtbin`. If `FERMI_INST_DIR`
-  is unset (for example, outside an activated Fermitools environment),
-  template creation fails.
+  resolves to `$FERMI_INST_DIR/refdata/fermi/evtbin` in the **install**
+  tree. Conda activation sets `FERMI_INST_DIR=$CONDA_PREFIX/share/fermitools`
+  (see "Runtime environment" in ScienceTools' `docs/architecture/README.md`).
+  If it is unset, the path becomes `/refdata/fermi/evtbin` and template
+  creation fails.
 - **`test_evtbin`:**
   - It is an `st_app` application (`pfiles/test_evtbin.par`), so `PFILES`
     must be set up. It is **not registered with CTest**.
