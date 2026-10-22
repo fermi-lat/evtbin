@@ -219,6 +219,13 @@ pha.writeOutput("mytool 1.0", "out.pha");
 None directly. `Gti` is exposed through `pyExposure`'s SWIG interface, and
 `gtbin` is wrapped by `sane`'s `gt_apps`.
 
+### Environment variables
+
+The library and tools call no `getenv` directly. Templates are found through
+`FERMI_INST_DIR` (via `facilities`), and par files through `PFILES`; see
+*Build and test* and the "Runtime environment" section of ScienceTools'
+`docs/architecture/README.md`.
+
 ### File formats
 
 - **Inputs:** FT1 or GBM TTE (`EVENTS` + `GTI`, and `EBOUNDS` for GBM), FT2
