@@ -3,7 +3,7 @@ package: evtbin
 summary: Library and tools (gtbin, gtbindef) for binning event data into light curves, PHA1/PHA2 spectra, count maps/cubes and HEALPix maps.
 layer: analysis
 depends_on: [tip, astro, healpix, st_app, st_stream, st_facilities, facilities, hoops, CLHEP]
-used_by: [Likelihood, dataSubselector, rspgen, burstFit, pyExposure, SolarSystemTools, sane]
+used_by: [Likelihood, dataSubselector, rspgen, burstFit]
 last_reviewed_commit: 714227a
 ---
 
@@ -56,7 +56,6 @@ parameter list, algorithm list and tool name ("evtbin") are out of date. Use
 | Used by | `dataSubselector` | `dataSubselector::Gti` **derives from `evtbin::Gti`**. Because of this, evtbin's GTI behaviour underlies `gtmktime` and every DSS GTI. |
 | Used by | `rspgen` | `BinConfig`, binners, `Hist1D`/`Hist2D`, `Gti`. |
 | Used by | `burstFit` | `BayesianBinner`, `Hist1D`. |
-| Used by | `pyExposure` | `Gti` (SWIG-wrapped). |
 | Linked by | `SolarSystemTools`, `sane` | CMake link only; no direct `#include`s. |
 
 ## Key abstractions
@@ -216,7 +215,7 @@ pha.writeOutput("mytool 1.0", "out.pha");
 
 ### Python
 
-None directly. `Gti` is exposed through `pyExposure`'s SWIG interface, and
+None. (`pyExposure.i` mentions `Gti`, but that SWIG module is not built.)
 `gtbin` is wrapped by `sane`'s `gt_apps`.
 
 ### Environment variables
