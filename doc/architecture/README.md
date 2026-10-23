@@ -264,9 +264,13 @@ The library and tools call no `getenv` directly. Templates are found through
     and `gbmtiny.fits` files in `data/`.
   - It writes products (`LC1.lc`, `PHA1.pha`, `PHA2.pha`, `test.healmap`, …)
     to the **current directory**, so run it from a scratch directory.
-  - `data/outref/` holds reference copies of those outputs, but nothing in
-    this repo compares against them. The comparison happens outside the
-    repo, if at all.
+  - `data/outref/` holds reference copies of those outputs. Nothing in
+    this repo compares against them; ScienceTools'
+    `recipe/tests/ST-unit-test` (run by CI) does, in
+    `check_test_evtbin_output`, by `ftdiff`-ing nine outputs (`CM2.fits`,
+    `LC1.lc`, `PHA1.pha`, `PHA2.pha`, `test.ccube`, the GBM files and the
+    merged/separate spectra) against the installed
+    `$CONDA_PREFIX/share/fermitools/data/evtbin/outref`.
 - **Test data provenance:** `data/README.txt` describes how the tiny FT1
   and FT2 files were cut from DC2 data around the Crab.
 - **Legacy:** `SConscript` and `evtbinLib.py` belong to the old SCons build.
