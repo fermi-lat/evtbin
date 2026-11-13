@@ -1,0 +1,115 @@
+diff --git a/src/test/test_evtbin.cxx b/src/test/test_evtbin.cxx
+index d86a08f..f0e78f1 100644
+--- a/src/test/test_evtbin.cxx
++++ b/src/test/test_evtbin.cxx
+@@ -509,7 +509,7 @@ void EvtBinTest::testHist1D() {
+ 
+   // Check whether each bin has the right number:
+   int bin_num = 0;
+-  for (Hist1D::ConstIterator itor = lin_hist.begin(); itor != lin_hist.end(); ++itor, ++bin_num) {
++  for (auto itor = lin_hist.begin(); itor != lin_hist.end(); ++itor, ++bin_num) {
+     if (15 != *itor) {
+       std::cerr << msg << "'s bin number " << bin_num << " has " << *itor << " counts, not 15" << std::endl;
+       m_failed = true;
+@@ -539,9 +539,9 @@ void EvtBinTest::testHist2D() {
+ 
+   // Check whether each bin has the right number:
+   int bin_num1 = 0;
+-  for (Hist2D::ConstIterator1 itor1 = hist.begin(); itor1 != hist.end(); ++itor1, ++bin_num1) {
++  for (auto itor1 = hist.begin(); itor1 != hist.end(); ++itor1, ++bin_num1) {
+     int bin_num2 = 0;
+-    for (Hist2D::ConstIterator2 itor2 = itor1->begin(); itor2 != itor1->end(); ++itor2, ++bin_num2) {
++    for (auto itor2 = itor1->begin(); itor2 != itor1->end(); ++itor2, ++bin_num2) {
+       if (10 != *itor2) {
+         std::cerr << msg << "'s bin number (" << bin_num1 << ", " << bin_num2 << ") has " <<
+           *itor2 << " counts, not 10" << std::endl;
+@@ -643,7 +643,7 @@ void EvtBinTest::testSingleSpectrum() {
+   } else {
+     tip::Table::ConstIterator table_itor = table->begin();
+     bool discrepancy = false;
+-    for (Hist1D::ConstIterator itor = hist.begin(); !discrepancy && itor != hist.end(); ++itor, ++table_itor) {
++    for (auto itor = hist.begin(); !discrepancy && itor != hist.end(); ++itor, ++table_itor) {
+       if (*itor != (*table_itor)["COUNTS"].get()) discrepancy = true;
+     }
+     if (discrepancy) {
+@@ -738,7 +738,7 @@ void EvtBinTest::testBinConfig() {
+   // Get parameters.
+   st_app::AppParGroup & par_group = getParGroup("test_evtbin");
+ 
+-  Binner * binner = 0;
++  Binner * binner = nullptr;
+ 
+   try {
+     // Set the input file/table.
+@@ -816,7 +816,7 @@ void EvtBinTest::testBinConfig() {
+         binner->getInterval(binner->getNumBins() - 1).end() << " not -100." << std::endl;
+     }
+ 
+-    delete binner; binner = 0;
++    delete binner; binner = nullptr;
+ 
+     // Now test the logarithmic case with energy bins.
+     // Set name of energy field to be something strange.
+@@ -879,7 +879,7 @@ void EvtBinTest::testBinConfig() {
+         binner->getInterval(binner->getNumBins() - 1).end() << " not 1." << std::endl;
+     }
+ 
+-    delete binner; binner = 0;
++    delete binner; binner = nullptr;
+ 
+     // Now test the bin file case with energy bins.
+     par_group["ebinalg"] = "FILE";
+@@ -1077,7 +1077,7 @@ void EvtBinTest::testGti() {
+       m_failed = true;
+     }
+ 
+-    Gti::ConstIterator last = lc_gti.end();
++    auto last = lc_gti.end();
+     --last;
+     // The last interval should agree less exactly with the stop interval read from the file, because the gti was recut.
+     const double gti2_duration = 1.692876845e+3;
+@@ -1099,7 +1099,7 @@ void EvtBinTest::testGti() {
+ 
+   Gti spec_gti("PHA1.pha", "GTI");
+ 
+-  Gti::ConstIterator gti_pos = spec_gti.begin();
++  auto gti_pos = spec_gti.begin();
+ 
+   const double gti_start = 223850000.0;
+   const double gti_stop = 223854399.129535;
+@@ -1129,7 +1129,7 @@ void EvtBinTest::testGti() {
+ 
+   // Interval > GTI.
+   gti_pos = spec_gti.begin();
+-  Gti::ConstIterator gti_pos2 = gti_pos;
++  auto gti_pos2 = gti_pos;
+   gti_pos2++;
+   fract = spec_gti.getFraction(gti_stop + .0001, gti_stop + 1.e3, gti_pos);
+   if (fract != 0.) {
+@@ -1534,7 +1534,7 @@ void EvtBinTest::testMultipleFiles() {
+ 
+   // Get information about input files for verification purposes.
+   std::vector<std::string>::size_type index = 0;
+-  for (FileSys::FileNameCont::iterator itor = input_file.begin(); itor != input_file.end(); ++itor, ++index) {
++  for (auto itor = input_file.begin(); itor != input_file.end(); ++itor, ++index) {
+     std::unique_ptr<const tip::Table> table(tip::IFileSvc::instance().readTable(*itor, "EVENTS"));
+     num_rec[index] = table->getNumRecords();
+     expected_num_events += num_rec[index];
+@@ -1542,7 +1542,7 @@ void EvtBinTest::testMultipleFiles() {
+ 
+   // Get the good time intervals from event file list.
+   Gti merged_gti(ev_list_file);
+-  Gti::ConstIterator merged_pos = merged_gti.begin();
++  auto merged_pos = merged_gti.begin();
+ 
+   // Confirm the gtis were merged correctly.
+   Gti expected_gti;
+@@ -1563,7 +1563,7 @@ void EvtBinTest::testMultipleFiles() {
+   for (int i = 0; i < n_gti; i++) {
+     expected_gti.insertInterval(gti_start[i], gti_stop[i]);
+   }
+-  Gti::ConstIterator expected_pos = expected_gti.begin();
++  auto expected_pos = expected_gti.begin();
+ 
+   //  if (merged_gti != expected_gti) {
+   const double epsilon = 1.0e-10;
