@@ -24,7 +24,7 @@ namespace evtbin {
     FileSys::FileNameCont file_cont = FileSys::expandFileList(file_name);
 
     // Iterate over input files.
-    for (FileSys::FileNameCont::iterator itor = file_cont.begin(); itor != file_cont.end(); ++itor) {
+    for (auto itor = file_cont.begin(); itor != file_cont.end(); ++itor) {
       // Open GTI extension.
       std::unique_ptr<const tip::Table> gti_table(tip::IFileSvc::instance().readTable(*itor, ext_name));
 
@@ -44,7 +44,7 @@ namespace evtbin {
     consolidate();
   }
 
-  double Gti::getFraction(double tstart, double tstop, ConstIterator & gti_pos) const {
+  auto Gti::getFraction(double tstart, double tstop, ConstIterator & gti_pos) const -> double {
     double fraction = 0.;
 
     for (; gti_pos != m_intervals.end(); ++gti_pos) {
@@ -73,11 +73,11 @@ namespace evtbin {
     return fraction;
   }
 
-  Gti Gti::operator &(const Gti & gti) const {
+  auto Gti::operator &(const Gti & gti) const -> Gti {
     Gti new_gti;
 
-    ConstIterator it1 = m_intervals.begin();
-    ConstIterator it2 = gti.m_intervals.begin();
+    auto it1 = m_intervals.begin();
+    auto it2 = gti.m_intervals.begin();
 
     // Iterate until either set of intervals is finished.
     while(it1 != m_intervals.end() && it2 != gti.m_intervals.end()) {
@@ -103,55 +103,55 @@ namespace evtbin {
     return new_gti;
   }
 
-  Gti Gti::operator |(const Gti & gti) const {
+  auto Gti::operator |(const Gti & gti) const -> Gti {
     Gti new_gti = *this;
     new_gti |= gti;
     return new_gti;
   }
 
-  Gti & Gti::operator &=(const Gti & gti) {
+  auto Gti::operator &=(const Gti & gti) -> Gti & {
     *this = *this & gti;
     return *this;
   }
 
-  Gti & Gti::operator |=(const Gti & gti) {
-    for (ConstIterator itor = gti.begin(); itor != gti.end(); ++itor) {
+  auto Gti::operator |=(const Gti & gti) -> Gti & {
+    for (auto itor = gti.begin(); itor != gti.end(); ++itor) {
       insertInterval(*itor);
     }
     consolidate();
     return *this;
   }
 
-  bool Gti::operator ==(const Gti & gti) const { return m_intervals == gti.m_intervals; }
+  auto Gti::operator ==(const Gti & gti) const -> bool { return m_intervals == gti.m_intervals; }
 
-  bool Gti::operator !=(const Gti & gti) const { return m_intervals != gti.m_intervals; }
+  auto Gti::operator !=(const Gti & gti) const -> bool { return m_intervals != gti.m_intervals; }
 
-  Gti::Iterator Gti::begin() { return m_intervals.begin(); }
+  auto Gti::begin() -> Gti::Iterator { return m_intervals.begin(); }
 
-  Gti::Iterator Gti::end() { return m_intervals.end(); }
+  auto Gti::end() -> Gti::Iterator { return m_intervals.end(); }
 
-  Gti::ConstIterator Gti::begin() const { return m_intervals.begin(); }
+  auto Gti::begin() const -> Gti::ConstIterator { return m_intervals.begin(); }
 
-  Gti::ConstIterator Gti::end() const { return m_intervals.end(); }
+  auto Gti::end() const -> Gti::ConstIterator { return m_intervals.end(); }
 
   void Gti::insertInterval(double tstart, double tstop) {
     m_intervals.insert(Interval_t(tstart, tstop));
     consolidate();
   }
 
-  int Gti::getNumIntervals() const { return m_intervals.size(); }
+  auto Gti::getNumIntervals() const -> int { return m_intervals.size(); }
 
   void Gti::setNumIntervals(int) {}
 
-  double Gti::computeOntime() const {
+  auto Gti::computeOntime() const -> double {
     double on_time = 0.;
-    for (IntervalCont_t::const_iterator itor = m_intervals.begin(); itor != m_intervals.end(); ++itor)
+    for (auto itor = m_intervals.begin(); itor != m_intervals.end(); ++itor)
       on_time += itor->second - itor->first;
     return on_time;
   }
 
   void Gti::write(std::ostream & os) const {
-    IntervalCont_t::const_iterator itor = m_intervals.begin();
+    auto itor = m_intervals.begin();
     if (m_intervals.end() != itor) {
       os << "[" << itor->first << ", " << itor->second << "]";
       ++itor;
@@ -164,10 +164,10 @@ namespace evtbin {
 
   void Gti::consolidate() {
     // Get iterator pointing to the first interval.
-    Iterator current = m_intervals.begin();
+    auto current = m_intervals.begin();
     if (m_intervals.end() != current) {
       // Get iterator pointing to the next interval.
-      Iterator next = current;
+      auto next = current;
 
       // Consider each pair of intervals in the container.
       for (++next; next != m_intervals.end(); ++next) {
@@ -194,7 +194,7 @@ namespace evtbin {
 
   void Gti::insertInterval(Interval_t interval) {
     // See if an interval already exists which has this start time.
-    Iterator found = m_intervals.find(interval.first);
+    auto found = m_intervals.find(interval.first);
     if (m_intervals.end() == found) {
       m_intervals.insert(interval);
     } else {
@@ -202,11 +202,11 @@ namespace evtbin {
     }
   }
 
-  const std::map<double, double> & Gti::intervals() const {
+  auto Gti::intervals() const -> const std::map<double, double> & {
     return m_intervals;
   }
 
-  std::ostream & operator <<(std::ostream & os, const Gti & gti) {
+  auto operator <<(std::ostream & os, const Gti & gti) -> std::ostream & {
     gti.write(os);
     return os;
   }

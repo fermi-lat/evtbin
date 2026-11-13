@@ -22,7 +22,7 @@ namespace evtbin {
     m_previous_value(interval_begin) {
   }
 
-  long ConstSnBinner::computeIndex(double value) const {
+  auto ConstSnBinner::computeIndex(double value) const -> long {
     // First make sure value is within the range.
     // Note that this interval is (] unlike all other binners which are [).
     if (m_interval_begin >= value || m_interval_end < value) return -1;
@@ -72,9 +72,9 @@ namespace evtbin {
     return index;
   }
 
-  long ConstSnBinner::getNumBins() const { return m_intervals.size(); }
+  auto ConstSnBinner::getNumBins() const -> long { return m_intervals.size(); }
 
-  Binner::Interval ConstSnBinner::getInterval(long index) const {
+  auto ConstSnBinner::getInterval(long index) const -> Binner::Interval {
     // Check bounds, and handle endpoints explicitly to avoid any round-off:
     if (index < 0 || (unsigned long)(index) >= m_intervals.size())
       return Binner::Interval(0., 0.);
@@ -82,6 +82,6 @@ namespace evtbin {
     return m_intervals[index];
   }
 
-  Binner * ConstSnBinner::clone() const { return new ConstSnBinner(*this); }
+  auto ConstSnBinner::clone() const -> Binner * { return new ConstSnBinner(*this); }
 
 }

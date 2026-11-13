@@ -8,7 +8,7 @@ namespace evtbin {
     s_config_cont.insert(std::make_pair("FERMI::LAT", &s_prototype));
   }
 
-  GlastLatBinConfig * GlastLatBinConfig::clone() const {
+  auto GlastLatBinConfig::clone() const -> GlastLatBinConfig * {
     return new GlastLatBinConfig(*this);
   }
 

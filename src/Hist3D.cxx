@@ -11,9 +11,9 @@ namespace evtbin {
   Hist3D::Hist3D(const Binner & binner1, const Binner & binner2, const Binner & binner3): m_data() {
     // Set initial size of data array:
     m_data.resize(binner1.getNumBins());
-    for (Cont_t::iterator itor1 = m_data.begin(); itor1 != m_data.end(); ++itor1) {
+    for (auto itor1 = m_data.begin(); itor1 != m_data.end(); ++itor1) {
       itor1->resize(binner2.getNumBins());
-      for (Cont_t::value_type::iterator itor2 = itor1->begin(); itor2 != itor1->end(); ++itor2) {
+      for (auto itor2 = itor1->begin(); itor2 != itor1->end(); ++itor2) {
         itor2->resize(binner3.getNumBins(), 0.);
       }
     }
@@ -25,7 +25,7 @@ namespace evtbin {
     m_binners[2] = binner3.clone();
   }
 
-  Hist3D::~Hist3D() throw() {}
+  Hist3D::~Hist3D() throw() = default;
 
   void Hist3D::fillBin(const std::vector<double> & value, double weight) {
     fillBin(value[0], value[1], value[2], weight);

@@ -82,7 +82,7 @@ void BinMakerApp::run() {
   // Update keywords using tip so we have valid fits file.
   // Put time in FITS Standard, borrowed from tip/header formatTime
   char string_time[] = "YYYY-MM-DDThh:mm:ss";
-  std::time_t now = std::time(0);
+  std::time_t now = std::time(nullptr);
   struct tm * loc_time = std::localtime(&now);
   std::strftime(string_time, sizeof(string_time), "%Y-%m-%dT%H:%M:%S", loc_time);
   Header::KeyValCont_t keywords;

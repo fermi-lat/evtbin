@@ -13,7 +13,7 @@ namespace evtbin {
     m_binners.resize(1, binner.clone());
   }
 
-  Hist1D::~Hist1D() throw() {}
+  Hist1D::~Hist1D() throw() = default;
 
   void Hist1D::fillBin(const std::vector<double> & value, double weight) {
     fillBin(value[0], weight);

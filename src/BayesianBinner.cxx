@@ -16,15 +16,15 @@
 #include "evtbin/BayesianBinner.h"
 
 namespace {
-  typedef std::deque<double> deque_t;
-  typedef std::vector<double> vec_t;
+  using deque_t = std::deque<double>;
+  using vec_t = std::vector<double>;
 }
 
 namespace evtbin {
 
-  BayesianBinner::~BayesianBinner() throw() {}
+  BayesianBinner::~BayesianBinner() throw() = default;
 
-  Binner * BayesianBinner::clone() const { return new BayesianBinner(*this); }
+  auto BayesianBinner::clone() const -> Binner * { return new BayesianBinner(*this); }
 
   void BayesianBinner::computeBlocks(const IntervalCont_t & intervals) {
     // Check inputs for validity.
@@ -52,13 +52,13 @@ namespace evtbin {
       if (index > 0) {
         // The following lines replace the following construct from BBglobal.pro:
         //       cumsizes = [cell_sizes(R), cumsizes + cell_sizes(R)]
-        for (deque_t::iterator itor = rev_csize.begin(); itor != rev_csize.begin() + index; ++itor)
+        for (auto itor = rev_csize.begin(); itor != rev_csize.begin() + index; ++itor)
           *itor += intervals[index].width();
         rev_csize.push_front(intervals[index].width());
 
         // The following lines replace the following construct from BBglobal.pro:
         //       cumpops  = [cell_pops(R),  cumpops  + cell_pops(R)]
-        for (deque_t::iterator itor = rev_cpop.begin(); itor != rev_cpop.begin() + index; ++itor) *itor += m_cell_pop[index];
+        for (auto itor = rev_cpop.begin(); itor != rev_cpop.begin() + index; ++itor) *itor += m_cell_pop[index];
         rev_cpop.push_front(m_cell_pop[index]);
       }
 

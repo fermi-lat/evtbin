@@ -125,13 +125,13 @@ class EvtBinTest : public st_app::StApp {
     std::string m_ft1_file;
     std::string m_ft2_file;
     std::string m_gbm_file;
-    double m_t_start;
-    double m_t_stop;
-    double m_e_min;
-    double m_e_max;
-    double m_gbm_t_start;
-    double m_gbm_t_stop;
-    bool m_failed;
+    double m_t_start{223850000.0};
+    double m_t_stop{223950000.0};
+    double m_e_min{30.};
+    double m_e_max{6000.};
+    double m_gbm_t_start{-4.193924833089113E-03};
+    double m_gbm_t_stop{1.368369758129120E-01};
+    bool m_failed{false};
 };
 
 EvtBinTest::EvtBinTest(): m_os("EvtBinTest", "EvtBinTest", 2), m_t_start(223850000.0), m_t_stop(223950000.0),

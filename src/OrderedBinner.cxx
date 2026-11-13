@@ -12,7 +12,7 @@ namespace evtbin {
 
   OrderedBinner::OrderedBinner(const IntervalCont_t & intervals, const std::string & name): Binner(name), m_intervals(intervals) {
     // Check over the bins to make sure they're in ascending order.
-    for (IntervalCont_t::const_iterator itor = m_intervals.begin(); itor != m_intervals.end(); ++itor) {
+    for (auto itor = m_intervals.begin(); itor != m_intervals.end(); ++itor) {
       // Each interval must itself be ordered.
       if (itor->end() < itor->begin()) {
         std::ostringstream os;
@@ -33,11 +33,11 @@ namespace evtbin {
     }
   }
 
-  OrderedBinner::~OrderedBinner() throw() {}
+  OrderedBinner::~OrderedBinner() throw() = default;
 
-  long OrderedBinner::computeIndex(double value) const {
+  auto OrderedBinner::computeIndex(double value) const -> long {
     // Find the first bin for which the value is < that bin's beginning value.
-    IntervalCont_t::const_iterator bound = std::upper_bound(m_intervals.begin(), m_intervals.end(), value);
+    auto bound = std::upper_bound(m_intervals.begin(), m_intervals.end(), value);
 
     // If this iterator points to the very first bin, the value does not belong in any bin.
     if (m_intervals.begin() == bound) return -1;
@@ -51,9 +51,9 @@ namespace evtbin {
     return -1;
   }
 
-  long OrderedBinner::getNumBins() const { return m_intervals.size(); }
+  auto OrderedBinner::getNumBins() const -> long { return m_intervals.size(); }
 
-  Binner::Interval OrderedBinner::getInterval(long index) const {
+  auto OrderedBinner::getInterval(long index) const -> Binner::Interval {
     // Check bounds, and handle endpoints explicitly to avoid any round-off:
     if (index < 0 || (unsigned long)(index) >= m_intervals.size())
       return Binner::Interval(0., 0.);
@@ -61,6 +61,6 @@ namespace evtbin {
     return m_intervals[index];
   }
 
-  Binner * OrderedBinner::clone() const { return new OrderedBinner(*this); }
+  auto OrderedBinner::clone() const -> Binner * { return new OrderedBinner(*this); }
 
 }

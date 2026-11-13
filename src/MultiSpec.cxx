@@ -84,7 +84,7 @@ namespace evtbin {
     output_table->setNumRecords(num_time_bins);
 
     long * channel = new long[num_energy_bins];
-    double * staterr = new double[num_energy_bins];
+    auto * staterr = new double[num_energy_bins];
     for (long index = 0; index != num_energy_bins; ++index) channel[index] = index + 1;
 
     // Iterate over bin number and output table iterator, writing fields in order.
@@ -144,8 +144,8 @@ namespace evtbin {
       // Then check for GBM deadtime for each spectrum.
       // We do this here rather than using the gbmExposure method since it writes to a table and not
       // to a header keyword.
-      KeyValuePairCont_t::iterator found2 = m_key_value_pairs.find("EVT_DEAD");
-      KeyValuePairCont_t::iterator found3 = m_key_value_pairs.find("EVTDEDHI");
+      auto found2 = m_key_value_pairs.find("EVT_DEAD");
+      auto found3 = m_key_value_pairs.find("EVTDEDHI");
       if (m_key_value_pairs.end() != found2 && !found2->second.empty()) {
 	double deadtime;
 	found2->second.getValue(deadtime);

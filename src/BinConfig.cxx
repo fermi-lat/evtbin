@@ -39,19 +39,19 @@ namespace evtbin {
     GlastLatBinConfig::load();
   }
 
-  BinConfig * BinConfig::create(const std::string & ev_file_name) {
+  auto BinConfig::create(const std::string & ev_file_name) -> BinConfig * {
     using namespace st_facilities;
     FileSys::FileNameCont file_name_cont = FileSys::expandFileList(ev_file_name);
-    BinConfig * config = 0;
+    BinConfig * config = nullptr;
     std::string mission;
     std::string instrument;
-    for (FileSys::FileNameCont::iterator file_itor = file_name_cont.begin(); file_itor != file_name_cont.end(); ++file_itor) {
+    for (auto file_itor = file_name_cont.begin(); file_itor != file_name_cont.end(); ++file_itor) {
       // Get container of all extensions in file.
       tip::FileSummary summary;
       tip::IFileSvc::instance().getFileSummary(*file_itor, summary);
   
       // Read all extensions in input file, looking for mission and instrument names.
-      for (tip::FileSummary::const_iterator itor = summary.begin(); itor != summary.end(); ++itor) {
+      for (auto itor = summary.begin(); itor != summary.end(); ++itor) {
         // Open extension.
         std::unique_ptr<const tip::Extension> table(tip::IFileSvc::instance().readExtension(*file_itor, itor->getExtId()));
   
@@ -70,7 +70,7 @@ namespace evtbin {
       // Put mission name in all uppercase to deal with any mixed cases
       std::transform(mission.begin(),mission.end(),mission.begin(),::toupper);
       // Find a prototype for a bin configuration appropriate for this mission/instrument.
-      ConfigCont::iterator found = s_config_cont.find(mission + "::" + instrument);
+      auto found = s_config_cont.find(mission + "::" + instrument);
       if (s_config_cont.end() != found) {
         config = found->second->clone();
       } else {
@@ -80,7 +80,7 @@ namespace evtbin {
       }
     }
 
-    if (0 == config)
+    if (nullptr == config)
       throw std::runtime_error("BinConfig::create was unable to determine the mission/instrument in file \"" +
         ev_file_name + "\"");
 
@@ -89,7 +89,7 @@ namespace evtbin {
 
   BinConfig::~BinConfig() {
     // This object is going away. Remove it from the container of prototypes if it is there.
-    for (ConfigCont::iterator itor = s_config_cont.begin(); itor != s_config_cont.end(); ++itor) {
+    for (auto itor = s_config_cont.begin(); itor != s_config_cont.end(); ++itor) {
       if (this == itor->second) {
         s_config_cont.erase(itor);
         break;
@@ -127,22 +127,22 @@ namespace evtbin {
       "lcemin", "lcemax");
   }
 
-  Binner * BinConfig::createEnergyBinner(const st_app::AppParGroup & par_group) const {
+  auto BinConfig::createEnergyBinner(const st_app::AppParGroup & par_group) const -> Binner * {
     return createBinner(par_group, "ebinalg", "efield", "emin", "emax", "denergy", "enumbins", "ebinfile",
       "ENERGYBINS", "E_MIN", "E_MAX");
   }
 
-  Binner * BinConfig::createTimeBinner(const st_app::AppParGroup & par_group) const {
+  auto BinConfig::createTimeBinner(const st_app::AppParGroup & par_group) const -> Binner * {
     return createBinner(par_group, "tbinalg", "tfield", "tstart", "tstop", "dtime", "ntimebins", "tbinfile",
       "TIMEBINS", "START", "STOP", "snratio", "lcemin", "lcemax");
   }
 
-  Binner * BinConfig::createEbounds(const st_app::AppParGroup & par_group) const {
+  auto BinConfig::createEbounds(const st_app::AppParGroup & par_group) const -> Binner * {
     return createBinner(par_group, "ebinalg", "efield", "emin", "emax", "denergy", "enumbins", "ebinfile",
       "ENERGYBINS", "E_MIN", "E_MAX");
   }
 
-  Gti * BinConfig::createGti(const st_app::AppParGroup & par_group) const {
+  auto BinConfig::createGti(const st_app::AppParGroup & par_group) const -> Gti * {
     return new Gti(par_group["evfile"]);
   }
 
@@ -211,13 +211,13 @@ namespace evtbin {
     } else throw std::runtime_error(std::string("Unknown binning algorithm ") + par_group[alg].Value());
   }
 
-  Binner * BinConfig::createBinner(const st_app::AppParGroup & par_group, const std::string & alg,
+  auto BinConfig::createBinner(const st_app::AppParGroup & par_group, const std::string & alg,
     const std::string & in_field, const std::string & bin_begin, const std::string & bin_end, const std::string & bin_size,
     const std::string & num_bins, const std::string & bin_file, const std::string & bin_ext, const std::string & start_field,
-    const std::string & stop_field, const std::string & sn_ratio, const std::string & lc_emin, const std::string & lc_emax) const {
+    const std::string & stop_field, const std::string & sn_ratio, const std::string & lc_emin, const std::string & lc_emax) const -> Binner * {
     using namespace evtbin;
 
-    Binner * binner = 0;
+    Binner * binner = nullptr;
 
     // Get the type of bin specification.
     std::string bin_type = par_group[alg].Value();

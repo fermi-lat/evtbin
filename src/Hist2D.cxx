@@ -11,7 +11,7 @@ namespace evtbin {
   Hist2D::Hist2D(const Binner & binner1, const Binner & binner2): m_data() {
     // Set initial size of data array:
     m_data.resize(binner1.getNumBins());
-    for (Cont_t::iterator itor = m_data.begin(); itor != m_data.end(); ++itor) {
+    for (auto itor = m_data.begin(); itor != m_data.end(); ++itor) {
       itor->resize(binner2.getNumBins(), 0);
     }
 
@@ -21,7 +21,7 @@ namespace evtbin {
     m_binners[1] = binner2.clone();
   }
 
-  Hist2D::~Hist2D() throw() {}
+  Hist2D::~Hist2D() throw() = default;
 
   void Hist2D::fillBin(const std::vector<double> & value, double weight) {
     fillBin(value[0], value[1], weight);

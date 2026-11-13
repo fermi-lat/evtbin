@@ -34,7 +34,7 @@ namespace evtbin {
     :Binner(name),
      m_hpx(order,scheme),
      m_lb(lb),
-     m_region( region.empty() ? 0 : new healpix::HealpixRegion(region) )
+     m_region( region.empty() ? nullptr : new healpix::HealpixRegion(region) )
   {
     if(order<0||order>12) {
       throw std::runtime_error("Order needs to be positive and <=12"); 
@@ -48,7 +48,7 @@ namespace evtbin {
     :Binner(name),
      m_hpx(nside,scheme,dummy),
      m_lb(lb),
-     m_region( region.empty() ? 0 : new healpix::HealpixRegion(region) )
+     m_region( region.empty() ? nullptr : new healpix::HealpixRegion(region) )
   {
     if(nside<0||nside>4096) {
       throw std::runtime_error("nside needs to be positive and <=4096"); 
@@ -61,7 +61,7 @@ namespace evtbin {
     :Binner("HEALPIX"),
      m_hpx(),
      m_lb(false),
-     m_region(0)
+     m_region(nullptr)
   {
 
     // Build a HealpixProj from the keywords
@@ -81,7 +81,7 @@ namespace evtbin {
     } catch (...) {
       ;
     }
-    m_region = regionString.empty() ? 0 : new healpix::HealpixRegion(regionString);
+    m_region = regionString.empty() ? nullptr : new healpix::HealpixRegion(regionString);
     setPixelMapping();
   }
      
@@ -90,14 +90,14 @@ namespace evtbin {
     :Binner(other.getName()),
      m_hpx(other.m_hpx),
      m_lb(other.m_lb),
-     m_region(other.m_region ? new healpix::HealpixRegion(*other.m_region) : 0),
+     m_region(other.m_region ? new healpix::HealpixRegion(*other.m_region) : nullptr),
      m_pixelIndices(other.m_pixelIndices),
      m_pixGlobalToLocalMap(other.m_pixGlobalToLocalMap)
   {
   }
   
    
-  long HealpixBinner::computeIndex(double coord1, double coord2) const 
+  auto HealpixBinner::computeIndex(double coord1, double coord2) const -> long 
   {
     // HEALPix expects theta and phi in degrees
     double phi = astro::degToRad(coord1);
@@ -107,7 +107,7 @@ namespace evtbin {
       return index;
     }
     // Not an all-sky map, convert to local pixel index
-    std::map<int,int>::const_iterator itrFind = m_pixGlobalToLocalMap.find(index);    
+    auto itrFind = m_pixGlobalToLocalMap.find(index);    
     if ( itrFind == m_pixGlobalToLocalMap.end() ) {
       return -1;
     }
@@ -115,13 +115,13 @@ namespace evtbin {
   } //end of compute index
   
   /////////////////////////////////////////////////////////////////////////1D-Binner
-  long HealpixBinner::computeIndex(double value) const {
+  auto HealpixBinner::computeIndex(double value) const -> long {
     if ( allSky() ) {
       if (value < 0 || value > m_hpx.Npix() ) return -1;
       return long(value);
     }
     // Not an all-sky map, convert to local pixel index
-    std::map<int,int>::const_iterator itrFind = m_pixGlobalToLocalMap.find(int(value));    
+    auto itrFind = m_pixGlobalToLocalMap.find(int(value));    
     if ( itrFind == m_pixGlobalToLocalMap.end() ) {
       return -1;
     }
@@ -129,15 +129,15 @@ namespace evtbin {
   }
   ////////////////////////////////////////////////////////////////////////////
   
-  long HealpixBinner::getNumBins() const { 
+  auto HealpixBinner::getNumBins() const -> long { 
     return allSky() ? m_hpx.Npix() : m_pixelIndices.size();
   }
   
-  Binner::Interval HealpixBinner::getInterval(long index) const {
+  auto HealpixBinner::getInterval(long index) const -> Binner::Interval {
     return Binner::Interval(0., 0.);
   }
   
-  Binner * HealpixBinner::clone() const { return new HealpixBinner(*this); } 
+  auto HealpixBinner::clone() const -> Binner * { return new HealpixBinner(*this); } 
   
   HealpixBinner::~HealpixBinner() throw(){
     delete m_region;
@@ -146,7 +146,7 @@ namespace evtbin {
   void HealpixBinner::setPixelMapping() {
     m_pixelIndices.clear();
     m_pixGlobalToLocalMap.clear();
-    if ( m_region == 0 ) {
+    if ( m_region == nullptr ) {
       return;
     }
 

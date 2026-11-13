@@ -41,7 +41,7 @@ namespace evtbin {
     adjustTimeKeywords(sc_file, sc_table, &binner);
   }
 
-  LightCurve::~LightCurve() throw() {}
+  LightCurve::~LightCurve() throw() = default;
 
   void LightCurve::writeOutput(const std::string & creator, const std::string & out_file) const {
     // Standard file creation from base class.

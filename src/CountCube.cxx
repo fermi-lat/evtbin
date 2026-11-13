@@ -41,7 +41,7 @@ namespace evtbin {
       LinearBinner(0.5, num_x_pix + 0.5, 1., ra_field),
       LinearBinner(0.5, num_y_pix + 0.5, 1., dec_field),
       energy_binner
-    ), m_proj_name(proj), m_crpix(), m_crval(), m_cdelt(), m_axis_rot(axis_rot), m_proj(0), m_use_lb(use_lb), m_ebounds(ebounds.clone()) {
+    ), m_proj_name(proj), m_crpix(), m_crval(), m_cdelt(), m_axis_rot(axis_rot), m_proj(nullptr), m_use_lb(use_lb), m_ebounds(ebounds.clone()) {
     m_hist_ptr = &m_hist;
 
     m_crpix[0] = (num_x_pix + 1.) / 2.;
@@ -128,7 +128,7 @@ namespace evtbin {
     std::unique_ptr<tip::Image> output_image(tip::IFileSvc::instance().editImage(out_file, ""));
 
     // Get dimensions of image.
-    typedef std::vector<tip::PixOrd_t> DimCont_t;
+    using DimCont_t = std::vector<tip::PixOrd_t>;
     DimCont_t dims = output_image->getImageDimensions();
 
     // Make sure image is two dimensional.

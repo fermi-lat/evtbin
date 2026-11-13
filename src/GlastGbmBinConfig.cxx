@@ -15,7 +15,7 @@ namespace evtbin {
     s_config_cont.insert(std::make_pair("FERMI::GBM", &s_prototype));
   }
 
-  GlastGbmBinConfig * GlastGbmBinConfig::clone() const {
+  auto GlastGbmBinConfig::clone() const -> GlastGbmBinConfig * {
     return new GlastGbmBinConfig(*this);
   }
 
@@ -24,7 +24,7 @@ namespace evtbin {
     // in channel space.
   }
   
-  Binner * GlastGbmBinConfig::createEnergyBinner(const st_app::AppParGroup & par_group) const {
+  auto GlastGbmBinConfig::createEnergyBinner(const st_app::AppParGroup & par_group) const -> Binner * {
     // Binning GBM data in energy is really making a histogram of the already
     // binned data using the bin numbers to set the bin intervals.
 
@@ -35,7 +35,7 @@ namespace evtbin {
     OrderedBinner::IntervalCont_t intervals(ebounds->getNumRecords());
 
     // Fill the intervals using the contents of the channel column.
-    OrderedBinner::IntervalCont_t::iterator interval_itor = intervals.begin();
+    auto interval_itor = intervals.begin();
     for (tip::Table::ConstIterator itor = ebounds->begin(); itor != ebounds->end(); ++itor, ++interval_itor) {
       double channel = (*itor)["CHANNEL"].get();
 
@@ -46,7 +46,7 @@ namespace evtbin {
     return new OrderedBinner(intervals, "PHA");
   }
   
-  Binner * GlastGbmBinConfig::createEbounds(const st_app::AppParGroup & par_group) const {
+  auto GlastGbmBinConfig::createEbounds(const st_app::AppParGroup & par_group) const -> Binner * {
     // Ebounds are read from the ebounds extension.
 
     // Open ebounds extension.
@@ -56,7 +56,7 @@ namespace evtbin {
     OrderedBinner::IntervalCont_t intervals(ebounds->getNumRecords());
 
     // Fill the intervals using the contents of the emin/emax column.
-    OrderedBinner::IntervalCont_t::iterator interval_itor = intervals.begin();
+    auto interval_itor = intervals.begin();
     for (tip::Table::ConstIterator itor = ebounds->begin(); itor != ebounds->end(); ++itor, ++interval_itor) {
       double e_min = (*itor)["E_MIN"].get();
       double e_max = (*itor)["E_MAX"].get();
@@ -68,7 +68,7 @@ namespace evtbin {
 
   }
 
-  Gti * GlastGbmBinConfig::createGti(const st_app::AppParGroup & par_group) const {
+  auto GlastGbmBinConfig::createGti(const st_app::AppParGroup & par_group) const -> Gti * {
     Gti * gti = new Gti;
 
     // Open events extension.

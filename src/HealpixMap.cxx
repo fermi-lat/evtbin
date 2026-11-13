@@ -38,7 +38,7 @@ namespace evtbin {
      // Set initial size of data array : m_data sized to the number of energy bin
      // m_ebinner->getNumBins() returns 0 if no energy binning is requested, which needs to default to 1 bin.
      m_data.resize(m_ebinner->getNumBins()?m_ebinner->getNumBins():1) ;
-     for (Cont_t::iterator itor = m_data.begin(); itor != m_data.end(); ++itor) {
+     for (auto itor = m_data.begin(); itor != m_data.end(); ++itor) {
        //each element of m_data sized to the number of healpix requested.
        itor->resize(m_hpx_binner.getNumBins(), 0);
      }
@@ -80,7 +80,7 @@ namespace evtbin {
      // Set initial size of data array : m_data sized to the number of energy bin
      // m_ebinner->getNumBins() returns 0 if no energy binning is requested, which needs to default to 1 bin.
      m_data.resize(m_ebinner->getNumBins()?m_ebinner->getNumBins():1) ;
-     for (Cont_t::iterator itor = m_data.begin(); itor != m_data.end(); ++itor) {
+     for (auto itor = m_data.begin(); itor != m_data.end(); ++itor) {
        //each element of m_data sized to the number of healpix requested.
        itor->resize(m_hpx_binner.getNumBins(), 0);
      }
@@ -110,12 +110,12 @@ namespace evtbin {
   HealpixMap::HealpixMap(const std::string & healpixmap_file)
     : DataProduct(healpixmap_file, "SKYMAP", evtbin::Gti(healpixmap_file)),
       m_hpx_binner(healpixmap_file, "SKYMAP"),
-      m_ebinner(0),
-      m_ebounds(0){
+      m_ebinner(nullptr),
+      m_ebounds(nullptr){
     
     readEbounds(healpixmap_file);
     //in principle it should be possible to build the following correctly from the bounds....
-    m_ebinner = 0;
+    m_ebinner = nullptr;
   } 
 
 
